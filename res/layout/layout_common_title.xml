@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_title_bar_height"
+   
+    android:background="@drawable/bg_common_title"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_btn_left"
+        android:layout_width="50.0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5.0dp"
+        android:clickable="true"
+        android:onClick="leftbuttonclick"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/comeback"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_comm_back"
+            android:clickable="false"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+  
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+ <TextView
+      
+      android:id="@+id/tv_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/title_txt"
+         android:visibility="gone"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+       android:background="@drawable/index_app_logo"
+        android:textSize="@dimen/text_size_large" />
+    <RelativeLayout
+        android:id="@+id/rl_select_city"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:onClick="chossCity"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/city"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:layout_width="40.0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/tv_city"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_drop_down" />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/rl_select_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="不限"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:layout_width="40.0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/tv_distance"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_drop_down" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/title_right_collect"
+        android:layout_width="35.0dp"
+        android:layout_height="35.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dp"
+        android:focusable="true"
+        android:background="@drawable/btn_collect_normal"
+        android:visibility="gone" />
+   
+    <Button
+        android:id="@+id/doctor_guanzhu"
+        android:layout_width="32.0dp"
+        android:layout_height="32.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dp"
+        android:focusable="true"
+       android:background="@drawable/guanzhu_doctor_hui"
+       android:visibility="gone" />
+
+    <Button
+        android:id="@+id/title_right_setting"
+        android:layout_width="30.0dp"
+        android:layout_height="30.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dp"
+        android:background="@drawable/img_setting"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/title_right_add_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dp"
+        android:background="@drawable/img_add_bank_card"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+       <TextView 
+           android:visibility="gone"
+           android:id="@+id/delete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="删除"
+           android:textColor="@color/white"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+       
+       <TextView 
+           android:visibility="gone"
+           android:id="@+id/myzixun"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="我的咨询"
+           android:textColor="@color/white"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+       <TextView 
+           android:visibility="gone"
+           android:id="@+id/province"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="湖南省"
+           android:textColor="@color/white"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+       
+       
+       <TextView 
+           android:visibility="gone"
+           android:id="@+id/keshi_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="科室"
+           android:textColor="@color/white"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+         <ImageView 
+           android:visibility="gone"
+           android:id="@+id/serach"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/serach"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+       
+    <TextView 
+           android:visibility="gone"
+           android:id="@+id/hebingfukuan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="合并付款"
+           android:textColor="@color/white"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+    <TextView 
+           android:visibility="gone"
+           android:id="@+id/hebingfukuan_hui"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="合并付款"
+           android:textColor="#3c537b"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10.0dp"/>
+  <Spinner 
+         android:visibility="gone"
+           android:id="@+id/sp_juli"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:background="@android:color/transparent"
+           android:layout_marginRight="10.0dp"/>
+    
+</RelativeLayout>

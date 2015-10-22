@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <TextView
+        android:id="@+id/hospital_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10.0dp"
+        android:text="@string/hospital_num"
+        android:textSize="@dimen/text_size_middle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/deliver_line" />
+
+    <com.jmheart.view.listview.RefreshListView
+        android:id="@+id/lv_hospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:divider="@color/deliver_line"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/im_ondate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ico_nodate" />
+
+    <TextView
+        android:id="@+id/watch_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查看更多"
+        android:textSize="@dimen/text_size_large"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+    
+
+    
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_search"
+            android:orientation="vertical" >
+ 
+	     <ListView
+        android:id="@+id/lv_follow_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:divider="@color/deliver_line"
+        android:dividerHeight="0.5dp" />
+                
+            <ImageView 
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_nodate"/>
+           
+        </LinearLayout>
+    
+
+</RelativeLayout>

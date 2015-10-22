@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deliver_line"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bank_logo" />
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_person_phy_order"
+           android:textSize="28px"
+           android:textStyle="bold"
+            android:text="621700292010095" />
+
+        <TextView
+            android:layout_marginRight="20dp"
+            style="@style/text_person_center"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/iv_person_phy_order"
+           android:textSize="24px"
+            android:text="信用卡" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_person_phy_order"
+        style="@style/rl_persona_center" >
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_toRightOf="@id/iv_person_phy_order"
+            android:text="网上支付单笔限额" />
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="1000元" />
+    </RelativeLayout>
+
+    <View style="@style/deliver_line_person_center" />
+
+    <RelativeLayout
+      
+        style="@style/rl_persona_center" >
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_toRightOf="@id/iv_person_phy_order"
+            android:text="网上支付单日限额" />
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="1000元" />
+    </RelativeLayout>
+
+</LinearLayout>

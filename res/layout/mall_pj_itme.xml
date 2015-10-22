@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="72px"
+        android:background="@drawable/sharp_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/action_settings"
+             />
+
+        <EditText
+            android:id="@+id/ed_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:hint="请输入评价的内容"
+           />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        
+        android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+    <Button 
+        android:text="取消"
+        android:id="@+id/btn_cacel"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        style="@style/button_confirm"/>
+    <Button 
+        android:text="确认"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn_post"
+        android:layout_weight="1"
+        style="@style/button_confirm"/>
+</LinearLayout>
+</LinearLayout>

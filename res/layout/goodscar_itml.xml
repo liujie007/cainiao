@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lin_layout_top_h"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/im_head"
+            android:layout_width="@dimen/goods_image_w"
+            android:layout_height="@dimen/goods_image_h"
+            android:padding="15dp"
+            android:src="@drawable/ic_error" />
+
+        <CheckBox
+            android:id="@+id/ch_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/lin_layout_top_v"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_tile"
+            style="@style/heath_wrap"
+            android:text="美澳健鱼哟焦浪"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_mtile"
+            style="@style/heath_wrap"
+            android:layout_marginTop="5dp"
+            android:text="天然与之，降低血脂"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_narge" />
+
+        <LinearLayout
+            style="@style/lin_layout_top_h"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="单价："
+                  android:textColor="@color/black"
+                android:textSize="@dimen/text_size_narge" />
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="￥"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_narge" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="15800.0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_narge" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/lin_layout_top_h"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+              android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="数量："
+                android:textSize="@dimen/text_size_narge" />
+
+            <Button
+                android:id="@+id/tv_outnum"
+                style="@style/heath_wrap"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:focusable="false"
+                android:background="@drawable/heath_goods_js"
+                />
+            <!-- android:background="@drawable/heath_box" -->
+
+            <LinearLayout
+                style="@style/lin_layout_top_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/ed_goodsnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tv_addnum"
+                style="@style/heath_wrap"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/heath_goods_add"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

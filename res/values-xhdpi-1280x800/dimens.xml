@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 标题栏的高度 -->
+    <dimen name="common_title_bar_height">55.0dp</dimen>
+
+    <!-- 字体的大小 -->
+    <dimen name="text_size_small">12.0sp</dimen>
+    <dimen name="text_size_middle">16.0sp</dimen>
+    <dimen name="text_size_large">20.0sp</dimen>
+
+    <!-- 科室字体高度 -->
+
+    <dimen name="keshi_width">50.0dp</dimen>
+
+    <!-- hospital  twxe -->
+
+    <dimen name="hospital_height">12.0dp</dimen>
+
+    <!-- Radiobutton  weight -->
+    <dimen name="radiobutton_height">25.0dp</dimen>
+
+    <!-- 添加常用就診人的高度 -->
+    <dimen name="add_usually_patient">70.0dp</dimen>
+    <!-- 我的关注 医生和医院的高度 -->
+    <dimen name="myconner_height">70.0dp</dimen>
+
+    <!-- 主界面中按钮的宽度和高度 -->
+    <dimen name="main_button_width">115.0dp</dimen>
+    <dimen name="main_button_height">115.0dp</dimen>
+    <dimen name="main_logo_height">100.0dp</dimen>
+
+    <!-- 主界面中底部导航栏按钮的宽度和高度 -->
+    <dimen name="main_bar_button_width">45.0dp</dimen>
+    <dimen name="main_bar_button_height">50.0dp</dimen>
+
+    <!-- 医院主页中的图片高度 -->
+    <dimen name="hospital_index_pic_height">200.0dp</dimen>
+
+    <!-- 医生主页中的图片高度 -->
+    <dimen name="doctor_index_pic_height">100.0dp</dimen>
+    <!-- 医生咨询图片高度 -->
+    <dimen name="doc_zixun_height">  65dp  </dimen>
+
+    <!-- 预约体检 -->
+    <dimen name="phy_choss_hostiy">80.0dp</dimen>
+    <!-- 个人中心 -->
+    <dimen name="person_center">70.0dp</dimen>
+    <!-- 云健康管理 -->
+    <dimen name="cloud_item">82dp</dimen>
+    <dimen name="per_adapter">200dp</dimen>
+    <dimen name="list_image_w">100dip</dimen>
+    <dimen name="list_image_h">80dip</dimen>
+	<dimen name="goods_image_w">150dip</dimen>
+	<dimen name="goods_image_h">150dip</dimen>
+</resources>

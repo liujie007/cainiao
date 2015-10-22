@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent" >
+    
+    <include 
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title"/>
+    <LinearLayout
+        android:id="@+id/top"
+        android:gravity="center"
+        android:layout_below="@+id/layout_common_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_usually_patient" >
+        <TextView 
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="就诊人"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View 
+            android:layout_marginLeft="1dp"
+            android:background="@color/blue"
+            android:layout_width="1dp"
+            android:layout_height="20dp"/>
+         <TextView 
+             android:gravity="center"
+            android:layout_weight="1"
+            android:text="日期"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View 
+            android:layout_marginLeft="1dp"
+            android:background="@color/blue"
+            android:layout_width="1dp"
+            android:layout_height="20dp"/>
+        <TextView 
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="医院科室"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+      <View 
+          android:id="@+id/view"
+            android:layout_below="@+id/top"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+     <ListView
+         android:layout_below="@+id/view"
+        android:id="@+id/logolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8.0dp"
+        android:background="@color/white"
+        android:divider="@color/deliver_line"
+        android:dividerHeight="0.5dp" />
+    
+       <View 
+           android:layout_marginTop="5dp"
+            android:layout_below="@+id/logolist"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    
+    
+    
+
+</RelativeLayout>

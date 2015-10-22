@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 底部的导航按钮 -->
+
+    <include
+        android:id="@+id/layout_bottom_button"
+        layout="@layout/layout_bottom_button" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/layout_bottom_button"
+        android:background="@color/deliver_line" />
+	<com.hncainiao.fubao.ui.views.JazzyViewPager
+        android:id="@+id/MainPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_below="@id/layout_common_title"
+        />
+<!--     <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_below="@id/layout_common_title" /> -->
+
+</RelativeLayout>

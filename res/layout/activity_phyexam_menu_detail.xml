@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phyexam_menu_detail"
+    style="@style/relativlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    tools:context=".ui.activity.personalcenter.ModifyAddressActivity" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.SuspendScrollView
+        android:id="@+id/suspend_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关爱老年人体检套餐"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/room_ratingbar"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4" >
+                    </RatingBar>
+
+                    <TextView
+                        android:id="@+id/tv_rkname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_narge" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/layout_buy_phymenu"
+                    layout="@layout/layout_buy_phymenu" />
+
+                <View
+                    style="@style/deliver_line_registration"
+                    android:layout_height="8.0dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/invented_line2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重点项目体检"
+                        android:textColor="#181818"
+                        android:textSize="@dimen/text_size_middle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_zdname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="关爱老年人体检套"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_zdrkname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐关爱老年人体检套餐"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_narge" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_see_more_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="6.0dp"
+                    android:text="查看图文详情>>"
+                    android:textColor="#ff8c1b"
+                    android:textSize="@dimen/text_size_middle"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/deliver_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约须知"
+                        android:textColor="#181818"
+                        android:textSize="@dimen/text_size_middle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_yyinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3.0dp"
+                        android:text="预约须知预约须知预约须知预约须知预约须知预约须知"
+                        android:textColor="#424344"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_buy_layout"
+                layout="@layout/layout_buy_phymenu1"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.hncainiao.fubao.ui.views.SuspendScrollView>
+
+</RelativeLayout>

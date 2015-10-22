@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+<ScrollView
+    android:id="@+id/sc"
+    android:layout_width="match_parent"
+     android:layout_below="@id/layout_common_title"
+    android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                   android:id="@+id/tv_address2"
+                    style="@style/text_registration"
+                    android:text="位   置" /> 
+
+                <TextView
+                    android:id="@+id/tv_address"
+                      style="@style/text_registration"
+                      android:layout_marginLeft="10dp"
+                      android:layout_toRightOf="@id/tv_address2"
+                    android:text="@string/location1" />
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@id/tv_address"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_location" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    style="@style/text_registration"
+                    android:text="医   院" />
+
+                <TextView
+                    android:id="@+id/tv_hostname"
+                    style="@style/text_registration"
+                     android:layout_marginLeft="10dp"
+                 android:layout_toRightOf="@id/tv_hospital"
+                    android:text="@string/hospital_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_offices"
+                    style="@style/text_registration"
+                    android:text="套   餐" />
+
+                <TextView
+                    android:id="@+id/tv_taocan"
+                    style="@style/text_registration"
+                     android:layout_marginLeft="10dp"
+                 android:layout_toRightOf="@id/tv_offices"
+                    android:text="@string/menu_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    style="@style/text_registration"
+                    android:text="@string/phyexam_money" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_registration"
+                     android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_doctor"
+                    android:text="@string/number"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dp"
+                android:paddingTop="18dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/select_phyexam_time"
+                android:textColor="#777777"
+                android:textSize="@dimen/text_size_middle" />
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:id="@+id/rela_choss_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_phyexam_time"
+                    style="@style/text_registration"
+                    android:layout_centerInParent="true"
+                    android:text="@string/visiting_time1" />
+
+                <ImageView
+                    style="@style/text_registration"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@id/tv_phyexam_time"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/collapse" />
+            </RelativeLayout>
+
+            <View
+                style="@style/deliver_line_registration"
+                android:background="@drawable/invented_line2" />
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:paddingLeft="15.0dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    style="@style/text_registration"
+                    android:text="@string/select_phyexam_per"
+                    android:textColor="#777777" />
+
+                <ImageButton
+                    android:id="@+id/btn_add_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:background="@drawable/add"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            
+                android:orientation="horizontal"
+                
+                android:paddingLeft="15.0dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <com.hncainiao.fubao.ui.views.ListViewForScrollView
+                    android:id="@+id/tijianperson_Lsit"
+                    android:layout_width="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:layout_height="wrap_content" >
+                </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_phyexam_submit"
+            style="@style/button_confirm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/submit" />
+    
+ </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="80dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical" >
+
+            <com.hncainiao.fubao.ui.views.ListViewForScrollView
+                android:id="@+id/list_goodscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" >
+            </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+    <LinearLayout
+        style="@style/lin_layout_top_v"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray" />
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+       
+
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 
+                 android:layout_marginLeft="20dp"
+             
+                android:text="删除"/>
+        </LinearLayout> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/lin_layout_top_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+  
+                <LinearLayout
+                    style="@style/lin_layout_top_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                       <CheckBox
+                android:id="@+id/ch_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:checked="false" />
+     <TextView
+                android:id="@+id/tv_del"
+                style="@style/heath_wrap"
+                android:layout_marginLeft="5dp"
+                android:text="全选"
+                android:textColor="@color/blue"
+                 />
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:layout_marginLeft="10dp"
+                        android:text="共选中" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsnum"
+                        style="@style/heath_wrap"
+                        android:text="0"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="个商品" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_h"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="合计" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsprice"
+                        style="@style/heath_wrap"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_settlement"
+                style="@style/button"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="立即结算" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

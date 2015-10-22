@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    <View 
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+        <TextView 
+            android:id="@+id/shangmo"
+            android:text="GPS/GPRS双模定位"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:layout_below="@+id/shangmo"
+            android:layout_marginTop="5dp"
+            android:text="您当前位置：湖南省长沙市麓景路8号"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView 
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View 
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+   <TextView 
+        android:text="健康数据："
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/xueya"
+                android:gravity="center"
+                android:background="#edf2fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+              <Button 
+               android:layout_margin="10dp"
+                android:id="@+id/img_xueya"
+                android:background="@drawable/selector_xueya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                
+                <TextView 
+                    android:textColor="#424344"
+                    android:textSize="16sp"
+                    android:text="120/80mmHg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:textSize="14sp"
+                        android:text="血压记录："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView 
+                         android:textSize="14sp"
+                        android:text="15-05-02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                </LinearLayout>
+            </LinearLayout>
+              <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/xueya"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="#edf2fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button 
+                 android:layout_margin="10dp"
+                android:id="@+id/img_xueya"
+                android:background="@drawable/selecror_xinlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                
+                <TextView 
+                    android:textColor="#424344"
+                    android:textSize="16sp"
+                    android:text="80次/分"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:textSize="14sp"
+                        android:text="脉搏记录:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView 
+                         android:textSize="14sp"
+                        android:text="15-05-02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+         <RelativeLayout
+             android:gravity="center"
+             android:layout_marginTop="20dp"
+             android:layout_below="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/xuetang"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="#edf2fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button 
+                 android:layout_margin="10dp"
+                android:id="@+id/img_xuetang"
+                android:background="@drawable/selector_xuetang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                
+                <TextView 
+                    android:textColor="#424344"
+                    android:textSize="16sp"
+                    android:text="5.6mmmol/L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:textSize="14sp"
+                        android:text="血糖记录："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView 
+                         android:textSize="14sp"
+                        android:text="15-05-02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                </LinearLayout>
+            </LinearLayout>
+              <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/xuetang"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="#edf2fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button 
+                 android:layout_margin="10dp"
+                android:background="@drawable/selector_xueyang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                
+                <TextView 
+                    android:textColor="#424344"
+                    android:textSize="16sp"
+                    android:text="80次/分"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView 
+                        android:textSize="14sp"
+                        android:text="血氧记录:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView 
+                         android:textSize="14sp"
+                        android:text="15-05-02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+        
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView 
+            android:id="@+id/result"
+            android:textSize="16sp"
+            android:text="经过健康评估，您当前的状态属于："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button 
+            android:layout_toRightOf="@+id/result"
+            android:background="@drawable/selector_healthzhaungtai"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+  
+    
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical" >
+    <RelativeLayout
+        		android:id="@+id/rela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg_nomal"
+                android:orientation="horizontal"
+                android:padding="5.0dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout style="@style/linear_registrtion" >
+
+                        <TextView
+                            
+                            android:id="@+id/tv1"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/patient" />
+
+                        <TextView
+                            android:id="@+id/listpatient_name"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/patient_name" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/linear_registrtion" >
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/identity_card" />
+
+                        <TextView
+                            android:id="@+id/idcard"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/identity_card_num" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/linear_registrtion" 
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/visiting_card" />
+
+                        <TextView
+                            android:id="@+id/cardno"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/card_num" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/linear_registrtion" >
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/phone1" />
+
+                        <TextView
+                            android:id="@+id/listphone"
+                            style="@style/text_person_phyinfo"
+                            android:text="@string/phone_num" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RadioButton
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:id="@+id/patient_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dp"
+                    style="@style/CheckBox"
+                    android:checked="true"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_common_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_follow_doctor"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/phy_choss_hostiy"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_bg_persona_rl"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="医生"
+            android:textColor="#424344"
+            android:textSize="@dimen/text_size_middle" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30.0dp"
+            android:layout_gravity="center"
+            android:background="@color/deliver_line" />
+
+        <TextView
+            android:id="@+id/tv_follow_hospital"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/phy_choss_hostiy"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_bg_persona_rl"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="医院"
+            android:textColor="#424344"
+            android:textSize="@dimen/text_size_middle" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll" >
+
+        <LinearLayout
+            android:id="@+id/ll_doctor_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="2.0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/blue" />
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/deliver_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hospital_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/deliver_line" />
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="2.0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/blue" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:background="@color/white" />
+
+</RelativeLayout>

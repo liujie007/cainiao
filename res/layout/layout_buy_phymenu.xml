@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55.0dp"
+     >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/now_price"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/text_size_middle" />
+
+    <TextView
+        android:id="@+id/tv_phymenu_now_price"
+        android:layout_width="wrap_content"
+ 	   android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/tv1"
+        android:textColor="@color/red"
+        android:text="1000"
+        android:layout_marginBottom="5dp"
+        android:textSize="26.0sp" />
+
+    <TextView
+        android:id="@+id/tv_phymenu_original_price"
+        android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/number1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_phymenu_now_price"
+        android:textSize="@dimen/text_size_middle" />
+
+    <Button
+        android:id="@+id/btn_phymenu_buy"
+        android:layout_width="80.0dp"
+        android:layout_height="40.0dp"
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_buy"
+        android:text="@string/buy" 
+      
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

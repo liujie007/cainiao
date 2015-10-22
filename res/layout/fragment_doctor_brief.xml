@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长沙市第一医院"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text=">" />
+
+        <TextView
+            android:id="@+id/ke_shi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text="普通外科"
+            android:textColor="#181818"
+            android:textSize="@dimen/text_size_middle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6.0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/deliver_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical" >
+        
+           <TextView 
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#424344"
+            android:text="强项："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+      <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/good_at"
+            android:textColor="#181818"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="甲狀腺，青光眼，毛病"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </ScrollView>
+    <View 
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/doctor_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="医生介绍" />
+    </ScrollView>
+    </LinearLayout>
+    
+    </ScrollView>
+   
+  
+
+  
+
+</LinearLayout>

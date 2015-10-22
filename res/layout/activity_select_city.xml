@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/common_title_bar"
+        layout="@layout/layout_common_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_city"
+            style="@style/reg_edittext"
+            android:drawableLeft="@drawable/search"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/del_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+      <View 
+        
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+      
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+        <TextView
+            android:id="@+id/current_city"
+            android:textSize="@dimen/text_size_large"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city" />
+        <TextView
+            android:id="@+id/resh"
+            android:textSize="@dimen/text_size_large"
+            android:paddingRight="10dp"
+            android:textColor="@color/gray_select"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新" />
+        
+    </RelativeLayout>
+    <View 
+        
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView 
+        android:textSize="@dimen/text_size_middle"
+        android:gravity="center_vertical"
+          android:background="@color/gray"
+          android:text="热门城市"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <GridView
+                android:gravity="center"
+                android:id="@+id/SELECT_City"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a0000000"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/common_title_bar"
+        layout="@layout/layout_common_title" />
+   
+     <LinearLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="点击切换到当前城市"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_middle" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue" />
+     
+        <LinearLayout
+          
+            android:id="@+id/Jilu"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray"
+            android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray"
+                android:text="最近访问城市"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+        
+          <GridView
+         
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/Jilu_grid"
+            android:listSelector="@null"
+            android:numColumns="3">
+         </GridView>
+         <ScrollView 
+             android:layout_width="match_parent"
+            android:layout_height="match_parent">
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        
+        <LinearLayout
+            android:id="@+id/zm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray"
+            android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray"
+                android:text="按字母排序"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+        
+      
+       
+          <com.hncainiao.fubao.ui.views.NoScrollGridView
+            android:id="@+id/Zm_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:listSelector="@null"
+            android:numColumns="6">
+        </com.hncainiao.fubao.ui.views.NoScrollGridView>
+       <!--4b83e7  -->
+     
+         <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ju_tiZm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/First_ZM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray"
+                android:text="A"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+        
+       
+           <com.hncainiao.fubao.ui.views.NoScrollGridView
+            android:visibility="gone"
+            android:id="@+id/Show_ZM_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@null"
+            android:numColumns="3">
+        </com.hncainiao.fubao.ui.views.NoScrollGridView>
+	</LinearLayout>
+	</ScrollView>
+
+
+
+</LinearLayout>

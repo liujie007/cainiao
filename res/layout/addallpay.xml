@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    
+  
+     <LinearLayout
+         android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+        <TextView 
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="日     期       "
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="1.0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="就诊人"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="1.0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="项        目  "
+                android:textSize="16sp" />
+              <TextView
+                android:layout_width="1.0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="费用 "
+                android:textSize="16sp" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+       <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue" />
+         <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+  <com.hncainiao.fubao.ui.views.ListViewForScrollView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:divider="@drawable/deliver_line"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_height="wrap_content" >
+    </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+    
+   <RelativeLayout
+       android:layout_marginBottom="20dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+         <TextView 
+             android:id="@+id/allmoney"
+             android:layout_alignParentRight="true"
+             android:text="共计：20元"
+             android:textSize="16sp"
+             android:layout_marginRight="16dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:textColor="@color/blue"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <LinearLayout 
+             android:layout_marginTop="8dp"
+             android:layout_below="@+id/allmoney"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            
+             <LinearLayout
+                 android:id="@+id/cannel"
+                 android:layout_marginLeft="16dp"
+                 android:layout_weight="2"
+                 android:gravity="center"
+                 android:background="@drawable/addallcannel"
+                 android:layout_width="80dp"
+                 android:layout_height="40dp" >
+                 <TextView 
+                     android:text="取消"
+                     android:textSize="16sp"
+                     android:textColor="#424344"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+             </LinearLayout>
+             <TextView 
+                 android:layout_weight="1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+            
+             <LinearLayout
+                android:id="@+id/pay"
+               android:layout_weight="2"
+               android:layout_marginRight="16dp"
+               android:gravity="center"
+                 android:background="@drawable/addallpay"
+                 android:layout_width="80dp"
+                 android:layout_height="40dp" >
+                  <TextView 
+                     
+                     android:text="支付"
+                     android:textSize="16sp"
+                     android:textColor="@color/white"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+             </LinearLayout>
+             
+             
+         </LinearLayout>
+         
+  
+   </RelativeLayout>
+    </LinearLayout>
+   
+    </ScrollView>
+
+    
+   
+    
+</LinearLayout>

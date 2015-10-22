@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hospital_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hospital_index_pic_height"
+        android:layout_below="@id/layout_common_title" >
+
+        <ImageView
+            android:id="@+id/hospital_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40.0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_gradual_change" >
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="6.0dp"
+                android:text="长沙市第一医院"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+
+            <TextView
+                android:id="@+id/attention_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="6.0dp"
+                android:text="关注量  0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_hospital_pic"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10.0dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="5dip" >
+
+        <com.hncainiao.fubao.ui.views.LineGridView
+            android:id="@+id/index_hospital_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:columnWidth="180dp"
+            android:gravity="center"
+            android:scrollbars="none"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@drawable/mother_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+     <TextView 
+        android:text="孕期"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+   <TextView 
+       android:layout_marginTop="5dp"
+        android:text="23周+2天"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+     <TextView 
+       android:layout_marginTop="15dp"
+        android:text="距离预产期"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+     <TextView 
+       android:layout_marginTop="5dp"
+        android:text="116天"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+        
+        
+        
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" >
+       <LinearLayout
+          android:id="@+id/linedd"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+     <ImageView 
+         android:layout_weight="1"
+         android:layout_margin="20dp"
+         android:src="@drawable/hushi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+       <ImageView 
+         android:layout_margin="20dp"
+         android:layout_weight="1"
+         android:src="@drawable/taixin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+        <ImageView 
+         android:layout_margin="20dp"
+         android:layout_weight="1"
+         android:src="@drawable/muyinsangcheng"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+      </LinearLayout>
+      
+       
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+     <ImageView 
+         android:layout_weight="1"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="30dp"
+         android:src="@drawable/mother_quan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+       <ImageView 
+         android:layout_margin="20dp"
+         android:layout_weight="1"
+         android:visibility="invisible"
+         android:src="@drawable/taixin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+        <ImageView 
+            android:visibility="invisible"
+         android:layout_margin="20dp"
+         android:layout_weight="1"
+         android:src="@drawable/muyinsangcheng"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+      </LinearLayout>
+      
+   </LinearLayout>
+        
+   
+    
+    
+    
+    </RelativeLayout>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+    
+     <!-- 医院主页中的图片高度 -->
+    <dimen name="hospital_index_pic_height">300.0dp</dimen>
+
+    <!-- 医生主页中的图片高度 -->
+    <dimen name="doctor_index_pic_height">300.0dp</dimen>
+
+</resources>

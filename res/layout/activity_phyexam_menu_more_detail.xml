@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phyexam_menu_more_detail"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.SuspendScrollView
+        android:id="@+id/more_suspend_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/layout_more_buy_phymenu"
+                    layout="@layout/layout_buy_phymenu" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"
+                    android:background="@color/deliver_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8.0dp"
+                    android:text="超值体检套餐-项目详情"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3.0dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                   />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3.0dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_more_buy_phymenu"
+                layout="@layout/layout_buy_phymenu" />
+        </FrameLayout>
+    </com.hncainiao.fubao.ui.views.SuspendScrollView>
+
+</RelativeLayout>

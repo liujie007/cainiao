@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/layout_common_title"
+        android:layout_height="match_parent">
+     <LinearLayout
+         android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dp">
+
+      
+
+            <RelativeLayout
+                android:id="@+id/hospital_adrmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/text_registration"
+                    android:text="@string/location" />
+
+                <TextView
+                    android:id="@+id/hospital_adr"
+                    android:textSize="@dimen/text_size_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_address"
+                    android:maxLength="17"
+                    android:maxLines="2"
+                    android:text="@string/location1" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/hospital_adr"
+                    android:id="@+id/hospital_adress"
+                    style="@style/select"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_location" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    style="@style/text_registration"
+                    android:text="@string/hospital" />
+
+                <TextView
+                    android:id="@+id/hospital_name"
+                    style="@style/text_registration"
+                    android:layout_toRightOf="@id/tv_hospital"
+                    android:text="@string/hospital_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_offices"
+                    style="@style/text_registration"
+                    android:text="@string/offices" />
+
+                <TextView
+                    android:id="@+id/keshi_name"
+                    style="@style/text_registration"
+                    android:layout_toRightOf="@id/tv_offices"
+                    android:text="@string/offices_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    style="@style/text_registration"
+                    android:text="@string/doctor" />
+
+                <TextView
+                    android:id="@+id/doctor_name1"
+                    style="@style/text_registration"
+                    android:layout_toRightOf="@id/tv_doctor"
+                    android:text="@string/doctor_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_registration"
+                    android:text="@string/visiting_time" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/text_registration"
+                    android:layout_toRightOf="@id/tv_time"
+                    android:text="@string/visiting_time1" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    style="@style/text_registration"
+                    android:text="@string/order_money" />
+
+                <TextView
+                    android:id="@+id/money"
+                    style="@style/text_registration"
+                    android:layout_toRightOf="@id/tv_money"
+                    android:text="@string/order_money1" />
+            </RelativeLayout>
+            <View 
+                android:id="@+id/view_jiu_hao"
+                style="@style/deliver_line_registration" />
+            <RelativeLayout
+                android:id="@+id/rela_jiu_hao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:padding="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_jiu_hao"
+                    style="@style/text_registration"
+                    android:text="就诊卡号：" />
+
+                <EditText
+                    android:id="@+id/ed_jiu_hao"
+                    android:background="@null"
+                    style="@style/text_registration"
+                    android:inputType="number"
+                    android:layout_toRightOf="@id/tv_jiu_hao"
+                    android:hint="请输入就诊卡号" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/invented_line2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8.0dp" >
+
+                <TextView
+                    style="@style/text_registration"
+                    android:text="@string/patient_msg" />
+
+                <ImageButton
+                    android:id="@+id/btn_add_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:background="@drawable/add"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8.0dp" >
+                
+                  <com.hncainiao.fubao.ui.views.ListViewForScrollView
+                      android:id="@+id/jiuzhen_person"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+                  
+            </RelativeLayout>
+    
+            <RelativeLayout
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+           <Button
+                android:id="@+id/btn_submit"
+                style="@style/button_confirm"
+                android:text="@string/submit" />
+           </RelativeLayout>
+            
+            
+           
+      
+        
+    </LinearLayout>
+    
+       
+        
+    </ScrollView>
+    
+    
+       
+    
+          
+                  
+
+</RelativeLayout>

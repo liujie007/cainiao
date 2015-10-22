@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content" >
+        
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="3">
+             <TextView
+                 android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textSize="16sp"
+	             android:layout_centerInParent="true"
+	             android:text="体检人" />
+             <TextView
+                 android:layout_width="1.0dp"
+                android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:layout_alignParentRight="true"
+                 android:background="@color/blue"
+                 />
+         </RelativeLayout>
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="3">
+             <TextView
+                 android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	               android:layout_centerInParent="true"
+	               android:textSize="16sp"
+	             android:text="日期" />
+                <TextView
+                 android:layout_width="1.0dp"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                
+                  android:layout_alignParentRight="true"
+                 android:background="@color/blue"
+                 />
+         </RelativeLayout>
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_weight="2">
+             <TextView
+                 android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	                 android:layout_centerInParent="true"
+	                 android:textSize="16sp"
+	             android:text="体检套餐" />
+         </RelativeLayout>
+        
+    </LinearLayout>
+
+    <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:divider="@drawable/deliver_line"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_height="match_parent" >
+    </ListView>
+    <ImageView 
+        android:id="@+id/icon_nodate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_list_nodate"/>
+
+</LinearLayout>

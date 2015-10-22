@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_common_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_order_sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单号：------"
+                    android:textColor="@color/phy_text"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:id="@+id/tv_place_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="下单时间：2015-09-03 08：00"
+                    android:textColor="@color/phy_text"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/text_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="姓        名：---" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/phy_share_yy"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_phy_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="已挂号"
+                            android:textColor="@color/phy_yy" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_cak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="身份证号：---------------"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:id="@+id/kanum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="就诊卡号：-------------"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="联系电话:---------"
+                    android:textSize="@dimen/text_size_middle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/li3"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10.0dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <View style="@style/deliver_line_registration" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8.0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_hospital"
+                            style="@style/text_registration"
+                            android:text="@string/hospital" />
+
+                        <TextView
+                            android:id="@+id/tv_hostname"
+                            style="@style/text_registration"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_hospital"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            style="@style/select"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20.0dp"
+                            android:layout_toRightOf="@+id/tv_hostname"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_location" />
+                    </RelativeLayout>
+
+                    <View style="@style/deliver_line_registration" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8.0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_offices"
+                            style="@style/text_registration"
+                            android:text="@string/offices" />
+
+                        <TextView
+                            android:id="@+id/tv_taocan"
+                            style="@style/text_registration"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_offices"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View style="@style/deliver_line_registration" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8.0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_doctor"
+                            style="@style/text_registration"
+                            android:text="@string/doctor" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            style="@style/text_registration"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/tv_doctor"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View style="@style/deliver_line_registration" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8.0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_phyexam_time"
+                            style="@style/text_registration"
+                            android:text="就诊时间:" />
+
+                        <TextView
+                            android:id="@+id/exam_time"
+                            style="@style/text_registration"
+                            android:layout_centerInParent="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/deliver_line_registration"
+                        android:background="@drawable/invented_line2"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mustknow"
+                        style="@style/text_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="就診須知"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp" >
+
+                <Button
+                    android:id="@+id/btn_place"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_marginRight="20.0dp"
+                    android:layout_weight="1"
+                    android:text="开始排队"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/ll_select"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_marginRight="20.0dp"
+                    android:layout_weight="1"
+                    android:text="取消预约"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+    <Button
+        android:id="@+id/btn_guahao"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_weight="1"
+        android:text="继续挂号"
+        android:visibility="gone" />
+
+</RelativeLayout>

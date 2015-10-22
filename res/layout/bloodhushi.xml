@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+        
+    </LinearLayout>
+    <View 
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="历史血压"
+        android:textColor="#424344"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView 
+        android:id="@+id/list"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#e9e9e9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView 
+            android:layout_margin="10dp"
+            android:text="您的几次血压有偏高的趋势，请您一定的注意身体小心高血压心脏病等突发疾病"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="测试"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="用药提醒"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="关联"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        
+        
+    </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>

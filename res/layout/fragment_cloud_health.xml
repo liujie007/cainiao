@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deliver_line"
+   >
+ 
+    <include 
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"/>
+
+    <ListView 
+        android:layout_below="@id/title"
+        android:id="@+id/listCould"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+         android:dividerHeight="5dp"
+         android:layout_marginTop="2dp"
+         android:divider="@drawable/fg"
+         android:listSelector="@android:color/transparent"
+        android:layout_height="match_parent"></ListView>
+    
+    
+</RelativeLayout>

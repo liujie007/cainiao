@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+        android:id="@+id/top"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView 
+            android:text="验证手机"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        	
+    </LinearLayout>
+      <LinearLayout 
+          android:id="@+id/phone"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         
+        <TextView 
+            android:id="@+id/telephone"
+            android:text="手机号码"
+            android:textSize="14sp"
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        	
+    </LinearLayout>
+      <LinearLayout 
+          android:id="@+id/lin"
+        android:layout_marginRight="20dp"
+      android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <EditText 
+        android:inputType="number"
+       
+        
+        android:id="@+id/code_editview"
+        android:hint="请输入手机验证码"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sendagin" 
+            android:text="重发短信"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        	
+    </LinearLayout>
+  
+    
+    <LinearLayout 
+        style="@style/lin_layout_top_h"
+        android:layout_height="wrap_content"
+      
+         android:layout_below="@+id/lin">
+          <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+          android:layout_marginBottom="30dp"
+       android:layout_weight="1"
+        android:id="@+id/btn_submit"
+        style="@style/button_confirm"
+        android:text="@string/submit" />
+    
+    
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+          android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:id="@+id/cannel"
+        style="@style/button_confirm"
+        android:text="取消" />
+    </LinearLayout>
+  
+    
+   
+    
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/xuetang" android:state_enabled="false"/>
+    <item android:drawable="@drawable/xuetang_click" android:state_pressed="true"/>
+    <item android:drawable="@drawable/xuetang"/>
+
+</selector>

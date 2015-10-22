@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:maxHeight="@dimen/listview_item_max_height"
+    android:maxWidth="@dimen/listview_item_max_height"
+    android:orientation="horizontal"
+    android:padding="8.0dp" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2015-05-16" />
+        <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:text="@string/hospital_name" />
+        </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0.5dp"
+        android:layout_height="55.0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dp"
+        android:layout_toRightOf="@id/hospital_name"
+        android:background="@color/deliver_line" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginLeft="10.0dp"
+       android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/patient_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="就诊人：张兰"
+                android:textColor="#424344"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_item_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="无效订单"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/office_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/offices_name"
+                android:textColor="#181818"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                style="@style/img_arrow"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题栏的颜色 -->
+    <color name="common_title_bar_background">#4B83E7</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#dedede</color>
+    <color name="gray_font">#818181</color>
+    <color name="gray_select">#777777</color>
+    <color name="deliver_line">#a1a1a1</color>
+    <color name="red">#cd0101</color>
+    <color name="black">#424344</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="select_group">#ebf1f3</color>
+    <color name="select_kind">#eeeeee</color>
+    <color name="blue">#4b83e7</color>
+    <color name="zhuce">#f6b982</color>
+    
+    
+    <color name="bg_layout">#F5F5F5</color>
+    
+    <!--登录颜色  -->
+    <color name="btn">#4b83e7</color>
+    <color name="lin">#a1a1a1</color>
+    <color name="radio">#777777</color>
+    
+   <!--体检详情  -->
+   <color name="phy_yy">#ffaa23</color>
+	<color name="phy_text">#4b83e7</color>
+	<!--修改资料  -->
+	<color name="modify_lin">#bdbbc3</color>
+</resources>

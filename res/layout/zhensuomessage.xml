@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/yaodian_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/doc_moren" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/yaodian_img"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:id="@+id/taodian_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="长沙市岳麓区湖里诊所"
+                android:textColor="#424344"
+                android:textSize="16sp" />
+            <LinearLayout 
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_weight="1" 
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/yellow"
+                    android:textSize="12sp"
+                    android:text="24小时营业"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                     android:layout_margin="2dp"
+                    android:layout_weight="1" 
+                     android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/yellow"
+                    android:textSize="12sp"
+                    android:text="擅长中医"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                     android:layout_margin="2dp"
+                    android:layout_weight="1" 
+                    android:gravity="center"
+                     android:textColor="@color/white"
+                    android:background="@drawable/yellow"
+                    android:textSize="12sp"
+                    android:text="平价"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                
+            </LinearLayout>
+            
+            
+
+            <TextView
+                android:id="@+id/yaodian_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="创远街15号"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+            <LinearLayout
+                 android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+              <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="电话：13760873216"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+              <LinearLayout
+                 
+                   android:layout_weight="1"
+                  android:orientation="horizontal"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content" >
+                  <ImageView 
+                      android:layout_weight="1"
+                      android:src="@drawable/shoucang"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"/>
+                   <ImageView 
+                       android:id="@+id/share"
+                        android:layout_weight="1"
+                      android:src="@drawable/share"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"/>
+              </LinearLayout>
+           
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View 
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+      <LinearLayout
+        android:id="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/yaodian"
+            android:textColor="@color/blue"
+            style="@style/text_bar_style"
+            android:text="具体介绍" />
+
+        <TextView
+            android:id="@+id/zhensuo"
+            style="@style/text_bar_style"
+            android:text="地图位置" />
+        
+        
+        <TextView
+            android:id="@+id/yo"
+            style="@style/text_bar_style"
+            android:text="患者评价" />
+
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_weight="1"
+            android:id="@+id/yaodian_view"
+            android:background="@color/blue"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+       <View
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:id="@+id/zhensuo_view"
+            android:background="@color/blue"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+       <View
+           android:visibility="invisible"
+            android:layout_weight="1"
+            android:id="@+id/yiyaogongsi_view"
+            android:background="@color/blue"
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+    <View 
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <com.hncainiao.fubao.ui.views.NoScrollViewPager
+            android:id="@+id/viewpager_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+</LinearLayout>

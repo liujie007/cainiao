@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent" >
+    
+     <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+     <ScrollView
+         android:layout_below="@+id/layout_common_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+        <LinearLayout 
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <LinearLayout
+         android:id="@+id/l1"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/add_usually_patient" >
+         <TextView 
+             android:layout_marginLeft="26dp"
+             android:textSize="@dimen/text_size_large"
+             android:textColor="#181818"
+             android:text="姓名："
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+         <EditText
+             android:gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+             android:id="@+id/edit_name"
+             style="@style/edit_add_card"
+             android:hint="请输入姓名" />
+  
+     </LinearLayout>
+     <View 
+         android:id="@+id/view1"
+         android:background="#bdbbc3"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"/>
+      <LinearLayout
+         android:id="@+id/l2"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/add_usually_patient" >
+         <TextView 
+             android:layout_marginLeft="26dp"
+             android:textSize="@dimen/text_size_large"
+             android:textColor="#181818"
+             android:text="身份证号："
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         <EditText 
+             android:gravity="center_vertical"
+             android:id="@+id/edit_idcard"
+             android:inputType="number"
+             style="@style/edit_add_card"
+             android:layout_marginLeft="21dp"
+             android:hint="请输入证件号"/>
+  
+     </LinearLayout>
+     <View 
+         android:id="@+id/view2"
+         android:background="#bdbbc3"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"/>
+       <LinearLayout
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/add_usually_patient" >
+          <TextView 
+             android:layout_marginLeft="26dp"
+             android:textSize="@dimen/text_size_large"
+             android:textColor="#181818"
+             android:text="联系电话："
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+          <EditText
+              android:gravity="center_vertical"
+              android:id="@+id/edit_phone"
+              android:inputType="phone"
+             android:layout_marginLeft="21dp"
+             style="@style/edit_add_card"
+             android:hint="请输入联系电话"/>
+  
+       </LinearLayout>
+       <View 
+         android:id="@+id/view6"
+         android:background="#bdbbc3"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"/>
+
+      
+         
+         <Button              
+              android:id="@+id/save"
+               android:layout_margin="10dp"
+                style="@style/button_confirm"
+                android:text="保存" />
+
+     </LinearLayout>
+     
+    
+     </ScrollView>
+     
+     
+    
+    
+    
+    
+    
+</RelativeLayout>

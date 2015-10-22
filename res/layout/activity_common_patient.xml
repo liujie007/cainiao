@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout"
+    android:background="@color/bg_layout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <ListView
+        android:id="@+id/lv_common_patient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:layout_marginTop="8.0dp"
+        android:background="@color/white"
+        android:divider="@color/bg_layout"
+        android:dividerHeight="4.0dp" />
+
+</RelativeLayout>

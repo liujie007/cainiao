@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_order_regis_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/deliver_line"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         android:layout_gravity="center"
+        android:src="@drawable/icon_guanghao"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4.0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/deliver_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_order_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:orientation="vertical"
+            android:padding="8.0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/order_rule"
+                android:textColor="#424344"
+                android:textSize="@dimen/text_size_middle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/order_update"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_drop_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4.0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/deliver_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感谢您使用本产品，由于本产品正在完善中，给您造成的不便我们深感抱歉"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

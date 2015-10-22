@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <TextView 
+            android:text="为了尽快回复您的问题，请以下列方式联系客服："
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+     <RelativeLayout
+         android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="85dp" >
+        <ImageView 
+            android:id="@+id/zaixina"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/zaixian"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView 
+            android:layout_marginLeft="30dp"
+            android:text="在线客服"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/zaixina"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView 
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </RelativeLayout>
+  <RelativeLayout
+         android:layout_marginTop="1dp"
+         android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="85dp" >
+        <ImageView 
+            android:id="@+id/hotline"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/hotline"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <LinearLayout
+              android:layout_toRightOf="@+id/hotline"
+               android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+           <TextView 
+            android:layout_marginLeft="30dp"
+            android:text="电话客服"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+           
+            <TextView 
+                android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="电话：1597318342"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+      
+        <ImageView 
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </RelativeLayout>
+        
+        
+    
+
+</LinearLayout>

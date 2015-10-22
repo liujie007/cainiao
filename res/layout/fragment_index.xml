@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_common_title" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+   		 android:layout_width="match_parent"
+   		 android:layout_height="match_parent"
+   		 android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="40%"
+        android:background="@drawable/index_logo" />
+
+        <LinearLayout
+            android:id="@+id/lin_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/index_selvet"
+             app:layout_heightPercent="10%"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息动态: "
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black" />
+
+            <com.jmheart.view.textview.AlwaysMarqueeTextView
+                android:id="@+id/tv_msg"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine ="true"
+				android:ellipsize ="marquee"
+				android:marqueeRepeatLimit ="3"
+                android:text="福报健康APP是指以银联卡为结算账户，可通过手机APP、自助终端、人工方式完成绑卡、挂号、支付、信息查询等一整套医疗服务的产品。通过此产品建设，能够切实减少患者排队次数，在支付环节减轻医院及患者负担，降低医院运营成本，提升医院移动信息应用水平。"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            app:layout_heightPercent="30%"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lin_yygh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/index_selvet"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/index_guahao_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="预约挂号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lin_yytj"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:background="@drawable/index_selvet"
+                    android:gravity="center"
+                     android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/index_fragment_zndz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="智能导诊" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_jksc"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/index_selvet"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                       android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/index_seach_n" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="搜      索" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="18%"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lin_wdzf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/index_selvet"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/index_zf_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的支付" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_wdsc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/index_selvet"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/index_fragment_myyy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的预约" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_seach"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/index_selvet"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/index_sc_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的关注" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="2%"
+            android:background="@color/gray"
+            android:orientation="vertical"/>
+ </com.zhy.android.percent.support.PercentLinearLayout>
+
+</LinearLayout>

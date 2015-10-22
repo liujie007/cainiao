@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    <ScrollView 
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         <com.hncainiao.fubao.ui.views.ListViewForScrollView
+             android:id="@+id/list"
+             android:layout_width="match_parent"
+             android:divider="@null"
+             android:layout_height="wrap_content" >
+         </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+           <TextView 
+               android:layout_marginLeft="20dp"
+               android:text="费用总计：40元"
+               android:textColor="@color/blue"
+               android:textSize="16sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/> 
+            
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rl_select_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/corners_selected_bg"
+                android:clickable="true"
+                android:padding="6.0dp" >
+
+                <ImageView
+                    android:id="@+id/iv_bank_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/bank_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/iv_bank_logo"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/bank_card_pay" />
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/bank_card_pay_msg"
+                        android:textColor="@color/deliver_line"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/iv_select_bank"
+                    style="@style/select"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_select" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rl_select_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/corners_unselected_bg"
+                android:clickable="true"
+                android:padding="6.0dp" >
+
+                <ImageView
+                    android:id="@+id/iv_hospital_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/hospital_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/iv_hospital_logo"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/hospital_pay" />
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/hospital_pay_msg"
+                        android:textColor="@color/deliver_line"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <ImageView
+                      android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/iv_select_hospital"
+                    style="@style/select"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_unselect" />
+            </RelativeLayout>
+            
+            <Button
+                android:layout_margin="20dp"
+                android:id="@+id/btn_confirm_order"
+                style="@style/button_confirm"
+                android:layout_marginBottom="30.0dp"
+                android:text="下一步" />
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

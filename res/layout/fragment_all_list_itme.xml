@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    
+    <LinearLayout
+        android:id="@+id/re_top"
+        style="@style/lin_layout_top_v"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/heath_wrap"
+            android:layout_alignParentLeft="true"
+            android:text="佛山助听器效果好，价器效果好，价器效果好，价器效果好，价器效果好，价器效果好，价格便宜"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+         <TextView
+         android:id="@+id/tv_state"
+         style="@style/heath_wrap"
+            android:text="待发货" />
+      
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_bottom"
+        style="@style/lin_layout_top_v"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_top"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/heath_wrap"
+            android:layout_alignParentLeft="true"
+            android:text="07-15 14:00" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/heath_wrap"
+               android:textColor="@color/red"
+            android:layout_alignParentRight="true"
+            android:text="总计：xx元" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:maxWidth="80.0dp"
+    android:padding="8dip" >
+
+    <ImageView
+        android:id="@+id/img_item_doctor"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/doc_moren" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_item_doctor"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" >
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          <TextView
+            android:id="@+id/tv_item_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="钟汉良"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+          
+           <TextView
+            android:id="@+id/doctor_zhiwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:maxLines="1"
+            android:text="教授"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+          
+        </LinearLayout>
+
+      
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/tv_item_doctor_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="长沙市第一医院-外壳"
+                android:textColor="@color/deliver_line" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/tv_item_doctor_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="擅长：熟练得很"
+                android:textColor="@color/deliver_line"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_doctor_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8.0dp"
+        android:layout_marginTop="3.0dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_zixun" />
+    
+    <LinearLayout
+        android:layout_below="@+id/iv_doctor_state"
+        android:orientation="vertical"
+         android:layout_marginRight="8.0dp"
+        android:layout_marginTop="3.0dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="220"
+                android:textColor="@color/deliver_line" />
+    
+     <TextView
+                android:id="@+id/zixunnum"
+                 android:layout_marginTop="3.0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="咨询量"
+                android:scaleType="fitXY"
+                android:textColor="@color/deliver_line" />
+    </LinearLayout>
+    
+       
+</RelativeLayout>

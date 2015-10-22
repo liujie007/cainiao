@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:layout_margin="10.0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="8.0dp"
+                android:paddingBottom="8.0dp"
+                >
+
+                <TextView
+                    android:id="@+id/patient_name"
+                    style="@style/text_registration"
+                    android:text="体  检  人:" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/patient_name"
+                    android:text="@string/patient_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="8.0dp"
+                android:paddingBottom="8.0dp">
+
+                <TextView
+                    android:id="@+id/identity_card_num"
+                    style="@style/text_registration"
+                    android:text="@string/identity_card_num" />
+
+                <TextView
+                    android:id="@+id/tv_idka"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/identity_card_num"
+                    android:text="@string/card_num" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="8.0dp"
+                android:paddingBottom="8.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    style="@style/text_registration"
+                    android:text="@string/phone1" />
+
+                <TextView
+                     android:id="@+id/tv_phone"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/tv_doctor"
+                    android:text="@string/phone_num" />
+            </RelativeLayout>
+
+            <View
+                style="@style/deliver_line_registration"
+                android:layout_marginTop="10.0dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:paddingLeft="15.0dp" 
+                android:paddingTop="10.0dp"
+                android:paddingBottom="10.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    style="@style/text_registration"
+                    android:text="@string/hospital" />
+
+                <TextView
+                     android:id="@+id/tv_host"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/tv_hospital"
+                    android:text="@string/hospital_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="10.0dp"
+                android:paddingBottom="10.0dp">
+
+                <TextView
+                    android:id="@+id/tv_offices"
+                    style="@style/text_registration"
+                    android:text="@string/menu" />
+
+                <TextView
+                     android:id="@+id/tv_taocan"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/tv_offices"
+                    android:text="@string/menu_name" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:paddingLeft="15.0dp" 
+                android:paddingTop="10.0dp"
+                android:paddingBottom="10.0dp">
+
+                <TextView
+                    android:id="@+id/tv_time1"
+                    style="@style/text_registration"
+                    android:text="@string/phyexam_time" />
+
+                <TextView
+                     android:id="@+id/tv_time"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/tv_time1"
+                    android:text="@string/visiting_time1" />
+            </RelativeLayout>
+
+            <View style="@style/deliver_line_registration" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="10.0dp"
+                android:paddingBottom="5.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_money1"
+                    style="@style/text_registration"
+                    android:text="@string/order_money"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                     android:id="@+id/tv_money"
+                    style="@style/text_registration"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/tv_money1"
+                    android:text="@string/order_money1"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/corners_selected_bg"
+                android:clickable="true"
+               android:paddingLeft="15.0dp" 
+                android:paddingTop="8.0dp"
+                android:paddingBottom="8.0dp" >
+
+                <ImageView
+                    android:id="@+id/iv_bank_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/bank_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/iv_bank_logo"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/bank_card_pay" />
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/bank_card_pay_msg"
+                        android:textColor="@color/deliver_line"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/iv_select_bank"
+                    style="@style/select"
+                    
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/corners_unselected_bg"
+                android:clickable="true"
+                android:paddingLeft="15.0dp" 
+                android:paddingTop="8.0dp"
+                android:paddingBottom="8.0dp" >
+
+                <ImageView
+                    android:id="@+id/iv_hospital_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/hospital_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@id/iv_hospital_logo"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/hospital_pay" />
+
+                    <TextView
+                        style="@style/text_registration"
+                        android:text="@string/hospital_pay_msg"
+                        android:textColor="@color/deliver_line"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/iv_select_hospital"
+                    style="@style/select"
+                    
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_unselect" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_confirm_phyexam_order"
+                style="@style/button_confirm"
+                android:layout_marginBottom="30.0dp"
+                android:text="@string/confirm_order" />
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+</RelativeLayout>

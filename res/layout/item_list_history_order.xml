@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/phy_choss_hostiy"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:maxHeight="120.0dp"
+    android:maxWidth="60.0dp"
+    android:padding="15dip" >
+<ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:src="@drawable/hostey_phy"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        
+        android:paddingLeft="25.0dp" >
+
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3.0dp" >
+
+            <TextView
+                android:id="@+id/tv_item_phy_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="孝心体检套餐"
+                android:textColor="#424344"
+                android:textSize="@dimen/text_size_middle"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_phy_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_marginLeft="5dp"
+                android:text="（长沙市第一医院）"
+                android:textColor="#424344"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_phy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="3.0dp"
+            android:text="体检时间：2015。04.09"
+            android:textColor="#777777"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_item_phy_detail"
+        style="@style/button_confirm"
+        android:layout_width="60.0dp"
+        android:layout_height="30.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5.0dp"
+        android:text="详 情" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_title" />
+
+    <LinearLayout style="@style/ll_persona_center" >
+
+        <RelativeLayout
+            android:id="@+id/rela_about"
+            style="@style/rl_persona_center" >
+
+            <TextView
+                style="@style/text_person_center"
+                android:layout_toRightOf="@id/iv_person_regis_order"
+                android:text="关于福报健康" />
+
+            <ImageView
+                style="@style/img_arrow"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <View style="@style/deliver_line_person_center" />
+
+        <RelativeLayout
+            android:id="@+id/rela_version"
+            style="@style/rl_persona_center" >
+
+            <TextView
+                android:id="@+id/tv_vison"
+                style="@style/text_person_center"
+                android:layout_toRightOf="@id/iv_person_phy_order"
+                android:text="最新版本号" />
+             <TextView
+                style="@style/text_person_center"
+                android:layout_toRightOf="@id/tv_vison"
+                android:text="v1.0" />
+
+            <ImageView
+                style="@style/img_arrow"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View style="@style/deliver_line_person_center" />
+
+        <RelativeLayout
+            android:id="@+id/rl_person_store_order"
+            style="@style/rl_persona_center" >
+
+            <TextView
+                style="@style/text_person_center"
+                android:layout_toRightOf="@id/iv_person_store_order"
+                android:text="清除本地缓存" />
+
+            <TextView
+                style="@style/text_person_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="22dp"
+                android:text="0.0MB" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/deliver_line2_person_center" />
+
+    <RelativeLayout style="@style/rl_persona_center" 
+        android:id="@+id/rela_awson">
+
+        <TextView
+            style="@style/text_person_center"
+            android:layout_toRightOf="@id/iv_person_store_order"
+            android:text="意见反馈" />
+
+        <ImageView
+            style="@style/img_arrow"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        style="@style/deliver_line2_person_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

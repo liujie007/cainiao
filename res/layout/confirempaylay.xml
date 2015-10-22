@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView 
+            android:id="@+id/time"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="2015-03-17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/hospital"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_alignParentRight="true"
+            android:text="长沙市湘雅附一医院"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/virtual_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/jiu"
+            android:text="就诊人:"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/name"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/jiu"
+            android:text="张三"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/card"
+            android:text="身份证号:"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/idcard"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/card"
+            android:text="430524"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/card"
+            android:text="科室:"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/department"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@+id/card"
+            android:text="眼科"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/card"
+            android:text="收费项目："
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <LinearLayout
+            android:layout_toRightOf="@+id/card"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:id="@+id/shoufeixiang"
+            android:layout_marginLeft="10dp"
+            android:text="诊查费 >"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+             <TextView 
+                 android:id="@+id/juti"
+            android:layout_marginLeft="10dp"
+            android:text="眼底检查"
+            android:textSize="16sp"
+            android:textColor="#181818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

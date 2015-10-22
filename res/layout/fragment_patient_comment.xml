@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <TextView
+         android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="评价数量" />
+     
+      <TextView
+          android:id="@+id/nuns"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(8)" />
+</LinearLayout>
+   <View 
+    android:background="#bdbbc3"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+   <ScrollView 
+       android:scrollbars="none"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+     <com.hncainiao.fubao.ui.views.ListViewForScrollView 
+       android:scrollbars="none"
+       android:id="@+id/list"
+       android:layout_width="match_parent"
+       android:divider="@null"
+       android:layout_height="wrap_content"/>
+   </ScrollView>
+  
+       
+   
+   
+    
+    
+    
+    
+
+</LinearLayout>

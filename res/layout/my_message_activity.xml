@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/layout_common_title"/>
+  <com.jmheart.view.listview.RefreshListView
+        android:scrollbars="none"
+        android:id="@+id/list_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/deliver_line"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0.1dp">
+        
+    </com.jmheart.view.listview.RefreshListView>
+    <LinearLayout 
+        android:id="@+id/lea_nodate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_list_nodate"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="没有数据"/>
+        
+    </LinearLayout>
+</LinearLayout>

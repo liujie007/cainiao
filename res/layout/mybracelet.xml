@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="睡眠时长：8小时05分"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="深睡时长：3小时02分"
+            android:textColor="#ffaa23"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+      <TextView 
+        android:layout_margin="20dp"
+        android:text="今日运动量"
+        android:textColor="#424344"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RelativeLayout
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+          <TextView 
+              android:id="@+id/step_num"
+              android:textColor="#424344"
+              android:textSize="20sp"
+              android:text="2870"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <TextView 
+              android:layout_toRightOf="@+id/step_num"
+              android:layout_alignBottom="@+id/step_num"
+              android:textColor="#424344"
+              android:textSize="14sp"
+              android:text="步"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </RelativeLayout>
+      <LinearLayout 
+          android:gravity="center_vertical"
+          android:layout_marginLeft="20dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView 
+              android:src="@drawable/run"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <FrameLayout
+              android:layout_marginLeft="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+                 <ImageView 
+                  android:src="@drawable/shouhuan_process"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"/>
+               <ImageView 
+                  android:background="@drawable/runprocess"
+                  android:layout_width="150dp"
+                  android:layout_height="10dp"/>
+          </FrameLayout>
+          
+      </LinearLayout>
+       <LinearLayout 
+           android:layout_marginTop="5dp"
+          android:gravity="center_vertical"
+          android:layout_marginLeft="20dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView 
+              android:src="@drawable/shouhuan_distance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <FrameLayout
+              android:layout_marginLeft="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+                 <ImageView 
+                  android:src="@drawable/shouhuan_process"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"/>
+               <ImageView 
+                  android:background="@drawable/runprocess"
+                  android:layout_width="150dp"
+                  android:layout_height="10dp"/>
+          </FrameLayout>
+          
+      </LinearLayout>
+      
+       <LinearLayout 
+           android:layout_marginTop="5dp"
+          android:gravity="center_vertical"
+          android:layout_marginLeft="20dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView 
+              android:src="@drawable/kaluli"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <FrameLayout
+              android:layout_marginLeft="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+                 <ImageView 
+                  android:src="@drawable/shouhuan_process"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"/>
+               <ImageView 
+                  android:background="@drawable/runprocess"
+                  android:layout_width="150dp"
+                  android:layout_height="10dp"/>
+          </FrameLayout>
+          
+      </LinearLayout>
+      
+      
+     </LinearLayout>
+        
+    </ScrollView>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

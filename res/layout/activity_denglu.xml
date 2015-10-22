@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="30dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/zhang_hao"
+                    style="@style/reg_edittext"
+                    android:layout_height="36dp"
+                    android:background="@color/white"
+                    android:digits="0123456789xyzXYZ"
+                    android:drawableLeft="@drawable/zhanghao_renwu"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" >
+                </EditText>
+
+            </LinearLayout>
+
+                <EditText
+                    android:password="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mima"
+                    android:layout_height="36dp"
+                    style="@style/reg_edittext"
+                    android:background="@drawable/bg_denglushuru"
+                    android:drawableLeft="@drawable/mima_suo"
+                    android:paddingLeft="10dp" />
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/getCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="记住我"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <Button
+                    android:id="@+id/denglu"
+                    style="@style/button_confirm"
+                    android:layout_marginTop="5dp"
+                    android:text="登陆" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/miss_mima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忘记密码"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <LinearLayout
+                    android:id="@+id/paixu_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/zhuce_huiyuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="成为会员"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+            </LinearLayout>
+     
+    </LinearLayout>
+
+</RelativeLayout>

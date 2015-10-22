@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <TextView
+        android:id="@+id/doctor_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebf1f3"
+        android:gravity="center"
+        android:padding="10.0dp"
+        android:text="@string/doctor_num"
+        android:textSize="@dimen/text_size_middle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/deliver_line" />
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/lv_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:divider="@color/deliver_line"
+        android:dividerHeight="0.5dp" />
+
+    <ImageView
+        android:id="@+id/im_ondate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_list_nodate" />
+
+</LinearLayout>

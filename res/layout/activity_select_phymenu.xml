@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_select_height"
+        android:layout_below="@id/layout_common_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10.0dp"
+            android:layout_weight="2.0"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLength="6"
+                android:text="@string/all"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_middle" />
+
+            <ImageView
+                android:id="@+id/iv_prolist_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_toRightOf="@id/tv_all"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/prolist_filter_closed" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/main_tab_RadioGroup"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_weight="3.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_default"
+                style="@style/select_bar"
+                android:text="@string/moren" />
+
+            <RadioButton
+                android:id="@+id/rb_price"
+                style="@style/select_bar"
+                android:layout_marginLeft="5.0dp"
+                android:text="@string/price" />
+
+            <RadioButton
+                android:id="@+id/rb_human"
+                style="@style/select_bar"
+                android:layout_marginLeft="5.0dp"
+                android:text="@string/human_qi" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2.0dp"
+        android:layout_below="@id/ll_select"
+        android:background="@color/blue" />
+
+    <ListView
+        android:id="@+id/lv_phy_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:divider="@color/LightGray"
+        android:dividerHeight="0.6dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_canvers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:alpha="0.3"
+        android:background="@color/black"
+        android:focusable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

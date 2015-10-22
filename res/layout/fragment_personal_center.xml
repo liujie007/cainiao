@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:layout_marginTop="3.0dp"
+        android:background="@drawable/bg_person_center_de" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_personal_msg"
+                android:layout_width="match_parent"
+                android:layout_height="160.0dp"
+                android:background="@drawable/bg_person_center"
+                android:clickable="true" >
+
+                <com.jmheart.view.imageview.RoundImageView
+                    android:id="@+id/iv_person_head"
+                    android:layout_width="80.0dp"
+                    android:layout_height="80.0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/pesonal_head_img" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_person_head"
+                    android:layout_alignTop="@id/iv_person_head"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dp"
+                    android:layout_toRightOf="@id/iv_person_head"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="昵    称："
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_middle" />
+
+                        <TextView
+                            android:id="@+id/tv_person_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_middle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="常居地："
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_middle" />
+
+                        <TextView
+                            android:id="@+id/tv_person_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_middle" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/person_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/person_center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_person_mypay"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_persona_rl"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="25.0dp"
+                        android:layout_height="25.0dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_zhifu" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:text="@string/wodezhifu" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/deliver_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_person_myfollow"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_persona_rl"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="25.0dp"
+                        android:layout_height="25.0dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_guanzhu" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:text="@string/wodeguanzhu" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/deliver_line2_person_center" />
+
+            <LinearLayout style="@style/ll_persona_center" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_person_regis_order"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_regis_order"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_guanhao" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_regis_order"
+                        android:text="@string/guahaoyuyue" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:visibility="gone" 
+                    style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_person_phy_order"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_phy_order"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_my_phy" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_phy_order"
+                        android:text="@string/tijianyuyue" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+             <View style="@style/deliver_line2_person_center" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_person_store_order"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_store_order"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_store_order" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_store_order"
+                        android:text="@string/store_order" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                        <View style="@style/deliver_line_person_center" />
+                <RelativeLayout
+                    android:id="@+id/rl_person_store_car"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_store_order2"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_store_order" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_store_order2"
+                        android:text="购物车" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View 
+                android:visibility="gone"
+                style="@style/deliver_line2_person_center" />
+
+            <LinearLayout style="@style/ll_persona_center" >
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_person_medical_record"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_medical_record"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_my_bank_card" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_medical_record"
+                        android:text="@string/my_bingli" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    
+                     style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_person_phy_record"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_phy_record"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_phy_baogao" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_phy_record"
+                        android:text="@string/tijianbaogao" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/deliver_line2_person_center" />
+
+            <LinearLayout style="@style/ll_persona_center" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_person_bank_card"
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_bank_card"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_my_bank_card" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_bank_card"
+                        android:text="@string/my_bank_card" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_person_common_patient "
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/iv_person_common_patient"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/usuallyjiuzhen" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/iv_person_common_patient"
+                        android:text="@string/changyongjiuzheng" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View 
+                    android:visibility="gone"
+                    style="@style/deliver_line_person_center" />
+                <!-- 常用体检人 -->
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/usually_phyperson "
+                    style="@style/rl_persona_center" >
+
+                    <ImageView
+                        android:id="@+id/img_usuallyPhy"
+                        style="@style/img_person_center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/usually_tijian" />
+
+                    <TextView
+                        style="@style/text_person_center"
+                        android:layout_toRightOf="@id/img_usuallyPhy"
+                        android:text="@string/changyongtijianren" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_person_center_de" />
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+</RelativeLayout>

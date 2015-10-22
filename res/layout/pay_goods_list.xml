@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lin_layout_top_h"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/im_head"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:padding="15dp"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/lin_layout_top_v"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_tile"
+            style="@style/heath_wrap"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_mtile"
+            style="@style/heath_wrap"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_narge" />
+
+        <LinearLayout
+            style="@style/lin_layout_top_h"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="单价："
+                 android:textColor="@color/black"
+                android:textSize="@dimen/text_size_narge" />
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="￥"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_narge" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_narge" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/lin_layout_top_h"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:text="数量："
+                 android:textColor="@color/black"
+                android:textSize="@dimen/text_size_narge" />
+
+            <TextView
+                android:id="@+id/tv_goodsnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="1盒"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

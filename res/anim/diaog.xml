@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<set xmlns:android="http://schemas.android.com/apk/res/android">  
+    <rotate  
+        android:fromDegrees="0"  
+        android:toDegrees="359"  
+        android:duration="500"  
+        android:repeatCount="-1"  
+        android:pivotX="50%"  
+        android:pivotY="50%" />  
+</set>  
+<!-- <?xml version="1.0" encoding="utf-8"?>  
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:oneshot="false" >  
+  
+    	加载图片1 
+    <item  
+        android:drawable="@drawable/ic_launcher"  
+        android:duration="150"/>  
+         加载图片2 
+    <item  
+        android:drawable="@drawable/acm_inputbox"  
+        android:duration="150"/>  
+        
+           <rotate  
+        android:fromDegrees="0"  
+        android:toDegrees="359"  
+        android:duration="500"  
+        android:repeatCount="-1"  
+        android:pivotX="50%"  
+        android:pivotY="50%" />  
+   </animation-list>   -->

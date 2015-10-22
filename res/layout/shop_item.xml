@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:maxHeight="80.0dp"
+    android:maxWidth="80.0dp"
+    android:padding="8dip" >
+
+    <ImageView
+        android:id="@+id/img_item_doctor"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/doc_moren" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_item_doctor"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" >
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          <TextView
+            android:id="@+id/tv_item_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="#181818"
+            android:maxLines="1"
+            android:text="蛋白粉"
+            android:textSize="@dimen/text_size_middle"/>
+        </LinearLayout>
+
+      
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/tv_item_doctor_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:text="所属医院：湖南省人民医院"
+                android:textColor="#424344" />
+
+            <TextView
+                android:id="@+id/tv_item_doctor_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="适应人群：青少年"
+                android:textColor="#424344"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:id="@+id/money"
+                android:text="￥69.0"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/start_money"
+          android:layout_marginTop="1dp"
+         android:text="￥169.0"
+         android:layout_marginLeft="10dp"
+         android:textColor="#777777"
+         android:textSize="13sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+
+    
+   
+  
+    
+       
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/yaodian_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/doc_moren" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/yaodian_img"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" >
+
+              <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+              <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="龚艺玲"
+                android:textColor="#181818"
+                android:textSize="16sp" />
+             <TextView
+                 android:id="@+id/status"
+                 android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="在线"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/good"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="擅长各种肝病，病毒性肝炎，肝纤维化，肝衰竭等慢性病"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+          
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

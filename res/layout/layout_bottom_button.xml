@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_bar_button_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout style="@style/ButtomBar" >
+
+        <ImageButton
+            android:id="@+id/buttom_index"
+            style="@style/ButtomBarImgBtn"
+            android:background="@drawable/selector_index"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ButtomBar" >
+
+        <ImageButton
+            android:id="@+id/buttom_cloud_health"
+            style="@style/ButtomBarImgBtn"
+            android:background="@drawable/selector_cloud_heathy"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ButtomBar" >
+
+        <ImageButton
+            android:id="@+id/buttom_per_medicine"
+            style="@style/ButtomBarImgBtn"
+            android:background="@drawable/selector_medical"
+            android:contentDescription="@string/app_name" /> 
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ButtomBar" >
+
+        <ImageButton
+            android:id="@+id/buttom_amb_services"
+            style="@style/ButtomBarImgBtn"
+            android:background="@drawable/selector_services"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ButtomBar" >
+
+        <ImageButton
+            android:id="@+id/buttom_per_center"
+            style="@style/ButtomBarImgBtn"
+            android:background="@drawable/selector_personal_center"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personal_message"
+    style="@style/relativlayout"
+    android:background="@color/bg_layout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <!-- 内容部分 -->
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_change_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/head"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow1"
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageView
+                        android:id="@+id/iv_person_msg_head"
+                        android:layout_width="60.0dp"
+                        android:layout_height="60.0dp"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_toLeftOf="@id/iv_arrow1"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/img_person_head" />
+                </RelativeLayout>
+
+                <View style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                    android:id="@+id/re_modify_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_center"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/nick"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow2"
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tv_person_msg_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_toLeftOf="@id/iv_arrow2"
+                        android:text="@string/nick"
+                         android:gravity="center_vertical"
+                        android:textColor="@color/gray_font" />
+                </RelativeLayout>
+
+                <View style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                    android:id="@+id/re_modify_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_center"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/sex"
+                        
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow3"
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tv_person_msg_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_toLeftOf="@id/iv_arrow3"
+                        android:text="@string/sex"
+                        android:textColor="@color/gray_font" />
+                </RelativeLayout>
+
+                <View style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                     android:id="@+id/re_modify_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_center"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/address1"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow4"
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tv_person_msg_address"
+                        android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_toLeftOf="@id/iv_arrow4"
+                        android:text="@string/address1"
+                        android:textColor="@color/gray_font" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                     android:id="@+id/re_modify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_center"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true" 
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/person_phone"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow5"
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tv_person_msg_phone"
+                        android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_toLeftOf="@id/iv_arrow5"
+                        android:text=""
+                        android:textColor="@color/gray_font" />
+                </RelativeLayout>
+
+                <View style="@style/deliver_line_person_center" />
+
+                <RelativeLayout
+                     android:id="@+id/re_modify_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_center"
+                    android:padding="12.0dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:text="@string/pwd_update"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <ImageView
+                        style="@style/img_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dp"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+		        android:id="@+id/btn_out"
+		        style="@style/button"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginRight="30dp"
+		        android:layout_marginTop="60dp"
+		        android:text="退出登录" />
+                
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_canvers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:alpha="0.3"
+        android:background="@color/black"
+        android:focusable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

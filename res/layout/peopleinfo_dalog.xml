@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="50dp"
+    android:background="@drawable/sharp_edittext"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/ed_name"
+        style="@style/editview"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="收货人"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/modify_lin" />
+
+    <EditText
+        android:id="@+id/ed_address"
+        style="@style/editview"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:hint="收货人地址"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/modify_lin" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        style="@style/editview"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:hint="收货人手机号码"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/modify_lin" />
+<Button 
+    android:id="@+id/btn_confirm"
+    style="@style/button_confirm"
+    android:layout_margin="50dp"
+    android:text="确定修改"/>
+</LinearLayout>

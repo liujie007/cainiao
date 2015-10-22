@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lin_layout_top_v"
+    android:background="@color/white" >
+
+    <include layout="@layout/layout_common_title" />
+
+    <TextView
+        style="@style/heath_wrap"
+        android:padding="10dp"
+        android:text="选择筛选类型" />
+
+    <View style="@style/heath_lin" />
+
+    <LinearLayout
+        style="@style/lin_layout_top_h"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/heath_box"
+            android:padding="5dp"
+            android:text="营养保健品"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/btn_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/heath_box_pass"
+            android:padding="5dp"
+            android:text="家用医疗器械"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout style="@style/lin_layout_top_v" >
+
+            <TextView
+                style="@style/heath_wrap"
+                android:padding="10dp"
+                android:text="价格" />
+
+            <View style="@style/heath_lin" />
+
+            <com.edmodo.rangebar.RangeBar
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rangebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                custom:tickCount="7" />
+
+            <LinearLayout
+                style="@style/lin_layout_top_h"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="0"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="50"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="200"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="400"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="800"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="1500"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_layout_top_v"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_narge" />
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:text="不限"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/heath_wrap"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="品牌" />
+
+                <CheckBox
+                    android:id="@+id/ch_pp"
+                    style="@style/heath_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="全部" />
+            </RelativeLayout>
+
+            <View style="@style/heath_lin" />
+
+            <com.hncainiao.fubao.ui.views.MyGridView
+                android:id="@+id/grid_pp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </com.hncainiao.fubao.ui.views.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/heath_wrap"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="类别" />
+
+                <CheckBox
+                     android:id="@+id/ch_lb"
+                    style="@style/heath_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="全部" />
+            </RelativeLayout>
+
+            <com.hncainiao.fubao.ui.views.MyGridView
+                android:id="@+id/grid_type"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </com.hncainiao.fubao.ui.views.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/btn_finsh"
+                style="@style/button_confirm"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="完成" />
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:gravity="center_horizontal" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hospital_index"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phy_choss_hostiy"
+        android:layout_below="@id/layout_common_title"
+        android:background="@color/white"
+        android:padding="10.0dp" >
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:layout_toRightOf="@id/img_main"
+            android:text="@string/go_hospital_index"
+            android:textColor="#424344"
+            android:textSize="@dimen/text_size_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_item_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/rl_hospital_index"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ExpandableListView 
+            android:id="@+id/expand_list_offices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:childDivider="@drawable/child_bg"
+            android:childIndicatorLeft="0dp"
+            android:divider="@color/deliver_line"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" >
+        </ExpandableListView>
+        
+    </LinearLayout>
+</RelativeLayout>

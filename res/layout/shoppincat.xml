@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <CheckBox 
+        android:id="@+id/chooseall"
+        android:layout_below="@+id/list"
+        android:text="全选"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_below="@+id/chooseall"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+      <LinearLayout
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" >
+          <TextView
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:text="共选中4个商品"/>
+            <TextView
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:text="您此次购买总金额：394"/>
+          
+      </LinearLayout>
+        
+         <LinearLayout
+             android:layout_weight="1"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" >
+               <Button
+                android:id="@+id/btn_confirm_order"
+                style="@style/button_confirm"
+                android:layout_marginBottom="30.0dp"
+                android:text="@string/confirm_order" />
+          
+      </LinearLayout> 
+        
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

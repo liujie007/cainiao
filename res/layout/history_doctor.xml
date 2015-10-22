@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+      <!-- 标题栏 -->
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:layout_gravity="center_horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_search"
+            android:orientation="vertical" >
+ 
+	         <ListView
+	                android:id="@+id/history_docList"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:divider="@color/deliver_line"
+	                android:dividerHeight="0.5dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/deliver_line" />
+            <ImageView 
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_nodate"/>
+           
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

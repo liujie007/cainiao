@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:id="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_yaodian"
+                style="@style/text_nete_style"
+                android:padding="10dp"
+                android:text="药店"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_zhensuo"
+                style="@style/text_nete_style"
+                android:padding="10dp"
+                android:text="诊所" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_yiyao"
+                style="@style/text_nete_style"
+                android:text="医药公司" />
+
+         
+        </LinearLayout>
+    </LinearLayout>
+
+   <LinearLayout 
+       android:id="@+id/lin"
+       android:layout_below="@id/button_group"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/gray"
+       android:orientation="horizontal">
+          <View
+            android:id="@+id/yaodian_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+             <View
+            android:id="@+id/zhensuo_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+              android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+                <View
+            android:id="@+id/yiyao_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+              android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue" />
+   </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lin" />
+
+
+   <LinearLayout 
+       android:id="@+id/lin_is"
+       android:layout_below="@id/lin" 
+         android:layout_width="match_parent"
+         
+         android:orientation="vertical"
+         android:visibility="gone"
+         android:background="@color/white"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

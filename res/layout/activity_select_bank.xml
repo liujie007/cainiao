@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativlayout" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:layout_margin="10.0dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dp"
+            android:text="@string/select_bind_card"
+            android:textColor="#777777"
+            android:textSize="@dimen/text_size_middle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4.0dp"
+            android:background="@drawable/line_bank" />
+
+        <ListView
+            android:id="@+id/lv_bank_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/invented_line" />
+
+        <Button
+            android:id="@+id/btn_confirm_pay"
+            style="@style/button_confirm"
+            android:text="@string/confirm_pay" />
+    </LinearLayout>
+
+</RelativeLayout>

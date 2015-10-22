@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:maxHeight="80.0dp"
+    android:maxWidth="80.0dp"
+    android:padding="8dip" >
+
+    <ImageView
+        android:id="@+id/img_item_hospital"
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_hospital"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80.0dp"
+        android:layout_toRightOf="@id/img_item_hospital"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" >
+
+        <TextView
+            android:id="@+id/tv_item_hospital_name"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="长沙市第一医院"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_item_hospital_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="三级甲等"
+                android:textColor="@color/deliver_line"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_item_hospital_diatance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:text="距离5.0km"
+                android:textColor="@color/deliver_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dp"
+        android:background="@drawable/img_item_arrow"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

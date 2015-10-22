@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView 
+        android:id="@+id/City_top"
+        android:textSize="@dimen/text_size_middle"
+        android:paddingLeft="10dp"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:textColor="@color/blue"
+        android:text="最近访问的城市"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <GridView 
+        android:id="@+id/city_gridview"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </GridView>
+    
+    
+
+</LinearLayout>

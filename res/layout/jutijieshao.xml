@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <HorizontalScrollView
+        android:scrollbars="none"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" >
+             <ImageView 
+                 android:layout_weight="1"
+             android:layout_margin="5dp"
+             android:src="@drawable/doc_moren"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         
+        <ImageView 
+            android:layout_weight="1"
+             android:layout_margin="5dp"
+             android:src="@drawable/doc_moren"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+        <ImageView 
+            android:layout_weight="1"
+             android:layout_margin="5dp"
+             android:src="@drawable/doc_moren"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+           <ImageView 
+            android:layout_weight="1"
+             android:layout_margin="5dp"
+             android:src="@drawable/doc_moren"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         </LinearLayout>
+         
+    </HorizontalScrollView>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <LinearLayout 
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+              <TextView 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="    万达集团创立于1988年，形成万达商业、文化旅游、电子商务、连锁百货四大产业。截至2014年，企业资产5341亿元，年收入2424.8亿元。已在全国开业113座万达广场，73家酒店（其中68家五星级酒店），6600块电影屏幕，99家百货店。万达集团2020年目标：企业资产1万亿元，收入6000亿元，净利润600亿元，成为世界一流跨国企业"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#181818"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="    万达集团创立于1988年，形成万达商业、文化旅游、电子商务、连锁百货四大产业。截至2014年，企业资产5341亿元，年收入2424.8亿元。已在全国开业113座万达广场，73家酒店（其中68家五星级酒店），6600块电影屏幕，99家百货店。万达集团2020年目标：企业资产1万亿元，收入6000亿元，净利润600亿元，成为世界一流跨国企业"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#181818"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="门诊时间：" 
+        android:textColor="#424344"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView 
+             android:layout_weight="1"
+             android:textSize="12sp"
+             android:text="上午：6：00-12：00"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+        <TextView 
+             android:layout_weight="1"
+             android:textSize="12sp"
+             android:text="下午：6：00-12：00"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+    </LinearLayout>
+         </LinearLayout>
+        
+    </ScrollView>
+   
+
+</LinearLayout>

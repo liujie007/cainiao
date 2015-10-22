@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/title"
+        android:background="@color/white" >
+
+    <TextView
+            android:id="@+id/tv_order_state"
+            style="@style/heath_wrap"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="订单状态" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_order_state"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="待付款"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_large" />
+        
+        
+
+        <Button
+            android:id="@+id/btn_state"
+            style="@style/button"
+            android:layout_width="wrap_content"
+       android:layout_alignParentRight="true"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="付款" />
+        
+    </RelativeLayout>
+
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="1dp" >
+
+        <LinearLayout
+            style="@style/lin_layout_top_v"
+            android:layout_marginBottom="50dp" >
+
+            <RelativeLayout
+                style="@style/lin_layout_top_h"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    style="@style/heath_wrap"
+                    android:padding="15dp"
+                    android:text="订单号：1234567" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/heath_wrap"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:text="时间：2015-03-31" />
+                <Button
+            android:id="@+id/btn_tuikang"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+		       android:layout_alignParentRight="true"
+		       android:layout_marginRight="10dp"
+		       android:paddingLeft="10dp"
+		       android:layout_centerVertical="true"
+		       android:paddingRight="10dp"
+            	android:text="申请退款" />
+            </RelativeLayout>
+
+            <com.hncainiao.fubao.ui.views.ListViewForScrollView
+                android:id="@+id/list_goods_order_host"
+                style="@style/listview"
+                android:layout_marginTop="1dp" >
+            </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+
+            <LinearLayout
+                style="@style/lin_layout_top_h"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_goods_num"
+                    style="@style/heath_wrap"
+                    android:text="共3件商品,商品金额:" />
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    style="@style/heath_wrap"
+                    android:text="￥998"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/heath_wrap"
+                    android:layout_marginLeft="5dp"
+                    android:text="运费:" />
+
+                <TextView
+                    android:id="@+id/tv_kd_price"
+                    style="@style/heath_wrap"
+                    android:text="0"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/lin_layout_top_h"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    style="@style/lin_layout_top_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        style="@style/heath_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="总计："
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_all_price"
+                        style="@style/heath_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="￥998"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="收货信息" />
+
+            <LinearLayout
+                style="@style/lin_layout_top_h"
+                android:layout_marginTop="1dp" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/heath_wrap"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="姓名：刘杰" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/heath_wrap"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="电话：15574950345" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/heath_wrap"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:text="收货地址 ：长沙巨星创业基地" />
+            <TextView
+                style="@style/heath_wrap"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="物流信息" />
+              <TextView 
+                    android:id="@+id/tv_danhao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="运单号："/>
+            <com.hncainiao.fubao.ui.views.ListViewForScrollView
+                    android:id="@+id/list_kd"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="0.1dp"
+                    android:divider="@color/LightGray"
+                    android:layout_marginBottom="10dp" >
+                </com.hncainiao.fubao.ui.views.ListViewForScrollView>
+                <TextView 
+                    android:id="@+id/tv_list_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    
+                    android:text="暂无物流信息"/>
+        </LinearLayout>
+    </com.hncainiao.fubao.ui.views.CustomerScrollView>
+
+</RelativeLayout>

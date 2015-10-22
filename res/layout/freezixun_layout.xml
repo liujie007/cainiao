@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:id="@+id/layoutfreezixun"
+    android:layout_height="match_parent" >
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+    
+    <LinearLayout
+        android:id="@+id/ll_off"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+        <TextView 
+            android:id="@+id/off"
+            android:textColor="#4b83e7"
+            android:textSize="20sp"
+            android:text="@string/select_offices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView 
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/prolist_filter_closed"
+            android:contentDescription="@string/action_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    <com.hncainiao.fubao.ui.views.CustomerScrollView
+          android:layout_below="@+id/ll_off"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+       <RelativeLayout 
+        android:id="@+id/ttop"
+        android:background="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+       android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:id="@+id/ageandsex"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:textColor="#181818"
+                android:textSize="14sp"
+                android:paddingLeft="8dp"
+                android:text="@string/patientage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText 
+                android:inputType="number"
+                android:id="@+id/age"
+                android:background="@null"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+               <TextView 
+                android:textColor="#181818"
+                android:textSize="14sp"
+                android:text="@string/patientsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+         <RadioGroup
+            android:id="@+id/group"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/man"
+                style="@style/Radio_bank"
+                android:text="男"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="25dp" 
+                android:layout_marginBottom="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+             <RadioButton
+                 android:layout_marginTop="18dp"
+                 android:id="@+id/xinyong_card"
+                style="@style/Radio_bank"
+                android:text="女"
+                android:layout_marginLeft="25dp" 
+                android:layout_marginBottom="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+           </RadioGroup>
+           
+               
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/miaoshu"
+            android:paddingLeft="8dp"
+            android:textColor="#181818"
+            android:textSize="14sp"
+            android:layout_below="@+id/ageandsex"
+            android:text="症状描述:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+      <EditText
+          android:id="@+id/editview"
+          android:gravity="top"
+          android:hint="@string/patientmianshu"
+          android:background="@drawable/drafreezixun"
+          android:layout_margin="8dp"
+           android:layout_below="@+id/miaoshu"
+           android:layout_width="match_parent"
+           android:layout_height="200dp" >
+            
+      </EditText> 
+      <TextView 
+          android:layout_below="@+id/editview"
+            android:id="@+id/pic"
+            android:paddingLeft="8dp"
+            android:textColor="#181818"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp"
+            android:text="添加图片:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+      
+      <LinearLayout
+          android:layout_marginTop="8dp"
+          android:id="@+id/ll_pic"
+          android:layout_below="@+id/pic"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+         <ImageView 
+             android:layout_gravity="center"
+             android:id="@+id/pic1"
+             android:layout_weight="1"
+             android:src="@drawable/addpic"
+             android:contentDescription="@string/action_settings"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:layout_gravity="center"
+             android:visibility="invisible"
+             android:id="@+id/pic2"
+             android:layout_weight="1"
+             android:src="@drawable/addpic"
+             android:contentDescription="@string/action_settings"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:layout_gravity="center"
+              android:visibility="invisible"
+             android:id="@+id/pic3"
+             android:layout_weight="1"
+             android:contentDescription="@string/action_settings"
+             android:src="@drawable/addpic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+           <ImageView 
+               android:layout_gravity="center"
+                android:visibility="invisible"
+             android:id="@+id/pic4"
+             android:layout_weight="1"
+             android:contentDescription="@string/action_settings"
+             android:src="@drawable/addpic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+             <ImageView
+                 android:layout_gravity="center"
+              android:visibility="invisible"
+             android:id="@+id/pic5"
+             android:layout_weight="1"
+             android:contentDescription="@string/action_settings"
+             android:src="@drawable/addpic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+          
+      </LinearLayout>
+      
+         <Button
+                android:layout_below="@+id/ll_pic"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btn_submit"
+                style="@style/button_confirm"
+                android:text="提交咨询" />
+        
+    </RelativeLayout>
+    
+       
+       
+  </com.hncainiao.fubao.ui.views.CustomerScrollView>
+  
+     <RelativeLayout
+        android:id="@+id/rl_canvers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_common_title"
+        android:alpha="0.3"
+        android:background="@color/black"
+        android:focusable="true"
+        android:visibility="gone" />
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+     <include
+        android:id="@+id/layout_common_title"
+        layout="@layout/layout_common_title" />
+     <LinearLayout 
+         android:id="@+id/zhenzhongzhifu"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <TextView
+             android:layout_marginLeft="12dp"
+             android:textColor="#424344" 
+             android:textSize="14sp"
+             android:layout_weight="1"
+             android:text="诊中支付"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:contentDescription="@string/action_settings"
+             android:paddingRight="12dp"
+             android:src="@drawable/img_item_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+    <LinearLayout 
+        android:layout_marginTop="1dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <TextView
+             android:layout_marginLeft="12dp"
+             android:textColor="#424344" 
+             android:textSize="14sp"
+             android:layout_weight="1"
+             android:text="报销"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:contentDescription="@string/action_settings"
+             android:paddingRight="12dp"
+             android:src="@drawable/img_item_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+ <LinearLayout 
+        android:layout_marginTop="8dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <TextView
+             android:layout_marginLeft="12dp"
+             android:textColor="#424344" 
+             android:textSize="14sp"
+             android:layout_weight="1"
+             android:text="医保清缴"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:contentDescription="@string/action_settings"
+             android:paddingRight="12dp"
+             android:src="@drawable/img_item_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+      <LinearLayout 
+        android:layout_marginTop="1dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <TextView
+             android:layout_marginLeft="12dp"
+             android:textColor="#424344" 
+             android:textSize="14sp"
+             android:layout_weight="1"
+             android:text="农合清缴"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:contentDescription="@string/action_settings"
+             android:paddingRight="12dp"
+             android:src="@drawable/img_item_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+      <LinearLayout 
+        android:layout_marginTop="1dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <TextView
+             android:layout_marginLeft="12dp"
+             android:textColor="#424344" 
+             android:textSize="14sp"
+             android:layout_weight="1"
+             android:text="商业保险购买"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"/>
+         <ImageView 
+             android:contentDescription="@string/action_settings"
+             android:paddingRight="12dp"
+             android:src="@drawable/img_item_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+</LinearLayout>

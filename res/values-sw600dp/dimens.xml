@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 标题栏的高度 -->
+    <dimen name="common_title_bar_height">55.0dp</dimen>
+    
+   
+    <dimen name="common_select_height">45.0dp</dimen>
+
+    <!-- 字体的大小 -->
+    <dimen name="text_size_small">12.0sp</dimen>
+    <dimen name="text_size_middle">16.0sp</dimen>
+    <dimen name="text_size_large">20.0sp</dimen>
+
+    <!-- 主界面中按钮的宽度和高度 -->
+    <dimen name="main_button_width">110.0dp</dimen>
+    <dimen name="main_button_height">110.0dp</dimen>
+
+    <!-- 主界面中底部导航栏按钮的宽度和高度 -->
+    <dimen name="main_bar_button_width">50.0dp</dimen>
+    <dimen name="main_bar_button_height">50.0dp</dimen>
+
+    <!-- 医院主页中的图片高度 -->
+    <dimen name="hospital_index_pic_height">200.0dp</dimen>
+
+    <!-- 医生主页中的图片高度 -->
+    <dimen name="doctor_index_pic_height">150.0dp</dimen>
+	
+    <!-- ListView 的Item的Max Min高度 -->
+    <dimen name="listview_item_max_height">60.0dp</dimen>
+    <dimen name="listview_item_min_height">60.0dp</dimen>
+ <dimen name="cloud_item">82dp</dimen>
+   <dimen name="per_adapter">200dp</dimen>
+</resources>

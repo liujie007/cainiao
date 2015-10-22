@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/layout_common_title"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+            android:layout_margin="20dp"
+            android:textColor="#424344"
+            android:textSize="16sp"
+            android:text="最近一周测量次数：20次"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:textSize="14sp"
+                android:text="正常"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bloodmanager"
+                android:layout_height="30dp"
+                android:layout_width="180dp" >
+                
+            </LinearLayout>
+            
+            <TextView 
+                android:textSize="14sp"
+                android:text="12次"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:textSize="14sp"
+                android:text="偏低"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bloodmanager"
+                android:layout_height="30dp"
+                android:layout_width="75dp" >
+                
+            </LinearLayout>
+            
+            <TextView 
+                android:textSize="14sp"
+                android:text="5次"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:textSize="14sp"
+                android:text="偏高"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bloodmanager"
+                android:layout_height="30dp"
+                android:layout_width="45dp" >
+                
+            </LinearLayout>
+            
+            <TextView 
+                android:textSize="14sp"
+                android:text="3次"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    <View 
+        android:layout_marginTop="5dp"
+        android:background="@drawable/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:text="2015-08-05测试结果"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+                <LinearLayout 
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/bloodmanager"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"/>
+                <TextView 
+                    android:layout_marginLeft="5dp"
+                    android:text="正常区间"
+                    android:textColor="#424344"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </LinearLayout>
+            
+           
+             <LinearLayout
+                 
+               android:orientation="vertical"
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+            </LinearLayout>
+            
+             <LinearLayout 
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="测试"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="用药提醒"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="关联"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView 
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="结果"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                 
+             </LinearLayout>
+             
+            
+            
+            
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+    
+    
+
+</LinearLayout>
