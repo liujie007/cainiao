@@ -36,7 +36,6 @@ public class ModifyPhoneActivity extends BaseActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		getWindow().setSoftInputMode( WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//不弹出软键盘
-
 		setContentView(R.layout.modify_phone_activity);
 		setTitle("修改联系号码");
 		((Button)findViewById(R.id.btn_submit)).setOnClickListener(this);

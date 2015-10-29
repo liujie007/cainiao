@@ -251,6 +251,7 @@ public class AbFragment extends BaseFragment implements BDLocationListener ,OnGe
 		public MyPoiOverlay(BaiduMap baiduMap) {
 			super(baiduMap);
 		}
+		
 
 		@Override
 		public boolean onPoiClick(int index) {
@@ -260,6 +261,8 @@ public class AbFragment extends BaseFragment implements BDLocationListener ,OnGe
 			// }
 			return true;
 		}
+		
+		
 	}
 	@Override
 	public void onResume() {

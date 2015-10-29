@@ -63,7 +63,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="dnWDTIZxXHswc0GSGKHjNvQc" />
+            android:value="TalIiAgdS7G5hwDHUVV1wB57" />
         <!-- -欢迎界面 -->
         <activity
             android:name="com.hncainiao.fubao.ui.activity.welcome.SplashActiivty"

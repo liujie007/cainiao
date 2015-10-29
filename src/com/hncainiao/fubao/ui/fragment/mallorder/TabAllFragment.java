@@ -99,29 +99,33 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 								// TODO Auto-generated method stub
 								List<GoodsBean> goodslistBeans = null;
 								try {
-									goodslistBeans = JsonUtil.parserJsonToList(GoodsBean.class, item.getOrder_detail());
+									if (item.getOrder_detail().equals("")||item.getOrder_detail().equals("[]")) {
+											
+									}
+									else {
+										goodslistBeans = JsonUtil.parserJsonToList(GoodsBean.class, item.getOrder_detail());
+										helper.setText(R.id.title, goodslistBeans.get(0).getProduct_name()+"");
+										helper.setText(R.id.tv_time,StringUtil.getaStrTime(item.getOrder_time())+"");
+										helper.setText(R.id.tv_price, "总计："+item.getTotal_fee()+"元");
+										if (item.getStatus().equals("2")) {
+											helper.setText(R.id.tv_state, "已付款待发货");
+										}
+										else if(item.getStatus().equals("3")){
+											helper.setText(R.id.tv_state, "已发货待收货");
+										}
+										else
+										{
+											helper.setText(R.id.tv_state, "已收货待评价");
+										}
+									}
 								} catch (Exception e) {
 									// TODO Auto-generated catch block
 									e.printStackTrace();
 								}
 								//showLog(goodslistBeans.toString()+""+goodslistBeans.get(0).toString()+""+goodslistBeans.get(0).getProduct_name());
-								helper.setText(R.id.title, goodslistBeans.get(0).getProduct_name()+"");
-								helper.setText(R.id.tv_time,StringUtil.getaStrTime(item.getOrder_time())+"");
-								helper.setText(R.id.tv_price, "总计："+item.getTotal_fee()+"元");
-								if (item.getStatus().equals("2")) {
-									helper.setText(R.id.tv_state, "已付款待发货");
-								}
-								else if(item.getStatus().equals("3")){
-									helper.setText(R.id.tv_state, "已发货待收货");
-								}
-								else
-								{
-									helper.setText(R.id.tv_state, "已收货待评价");
-								}
-							
 								
+					
 							}
-
 						
 							});
 					}

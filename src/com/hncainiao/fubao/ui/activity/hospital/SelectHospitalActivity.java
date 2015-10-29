@@ -197,11 +197,16 @@ public class SelectHospitalActivity extends BaseActivity  {
 						byte[] responseBody) {
 				       showLog(new String(responseBody));
 						imView.setVisibility(View.GONE);
-						if (new String(responseBody).equals("null")) {
-							listView.isEndDate();
-						
+						if (new String(responseBody).trim().equals("null")||new String(responseBody).trim().equals(null)) {
+							 showLog("zhixing");
+							listView.onLoadComplete();
+							listView.setResultSize(0);
+							if (apr!=null) {
+								apr.notifyDataSetChanged();
+							}
 						}else {
 							
+							// showToast(new String(responseBody));
 						
 					try {
 						
@@ -231,10 +236,11 @@ public class SelectHospitalActivity extends BaseActivity  {
 						
 					} catch (Exception e) {
 					}
+					listView.onLoadComplete();
+					listView.setResultSize(hospitals.size());
+					apr.notifyDataSetChanged();
 				}
-						listView.onLoadComplete();
-						listView.setResultSize(hospitals.size());
-						apr.notifyDataSetChanged();
+						
 				}
 
 				@Override

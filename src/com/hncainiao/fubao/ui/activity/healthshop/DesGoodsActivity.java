@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.RelativeLayout;
 
 import com.edmodo.rangebar.RangeBar;
 import com.edmodo.rangebar.RangeBar.OnRangeBarChangeListener;
@@ -33,7 +34,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
  * 	项目：FuBaoHealth
  * 		@author liujie
  *	日期：2015-7-13上午11:41:44
- *  商城
+ *   筛选
  */
 public class DesGoodsActivity extends BaseActivity {
 
@@ -48,6 +49,7 @@ public class DesGoodsActivity extends BaseActivity {
 	 ChoseGridViewAdapter adaptertypeAdapter;
 	 CheckBox chpP,chlBox;
 	 int xprive=0,yprice=6;
+	 RelativeLayout rela_type,rela_type1;
 	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -99,10 +101,11 @@ public class DesGoodsActivity extends BaseActivity {
 						 
 						    TypeBean typeBean =new TypeBean();
 						    typeBean.setId(jsonArray.getJSONObject(i).getString("id"));
-							
 							typeBean.setName(jsonArray.getJSONObject(i).getString("name"));
 							listType.add(typeBean);
 					}
+						
+					
 					JSONArray jsonArray2= jsonObject2.getJSONArray("category").getJSONObject(1).getJSONArray("child");
 						for (int j = 0; j < jsonArray2.length(); j++) {
 							
@@ -111,6 +114,9 @@ public class DesGoodsActivity extends BaseActivity {
 								
 							typeBean.setName(jsonArray2.getJSONObject(j).getString("name"));
 							listType2.add(typeBean);
+						}
+						if (listType.size()==0) {
+							rela_type1.setVisibility(View.GONE);
 						}
 						gridPpView.setAdapter(adapterppAdapter=new ChosePpGridViewAdapter(listPp, DesGoodsActivity.this));	
 						listType3.clear();
@@ -136,6 +142,8 @@ public class DesGoodsActivity extends BaseActivity {
 	 */
 	private void inintView()
 	{
+		rela_type=(RelativeLayout)findViewById(R.id.rela_type);
+		rela_type1=(RelativeLayout)findViewById(R.id.rela_type1);
 		RangeBar rangebar = (RangeBar) findViewById(R.id.rangebar);
 		rangebar.setOnRangeBarChangeListener(new MyRangBarListener());
 		chpP=getView(R.id.ch_pp);
@@ -256,18 +264,38 @@ public class DesGoodsActivity extends BaseActivity {
 			
 			btnType. setBackgroundResource(R.drawable.heath_box_pass);
 			btnType2.setBackgroundResource(R.drawable.heath_box);
-			listType3.clear();
-			listType3.addAll(listType2);
-			gridTypeView.setAdapter(adaptertypeAdapter=new ChoseGridViewAdapter(listType3, DesGoodsActivity.this));
+			if (listType2.size()==0) {
+				rela_type1.setVisibility(View.GONE);
+			}
+			else
+			{
+				rela_type1.setVisibility(View.VISIBLE);
+			}
 			
+				listType3.clear();
+				listType3.addAll(listType2);
+				gridTypeView.setAdapter(adaptertypeAdapter=new ChoseGridViewAdapter(listType3, DesGoodsActivity.this));
+			
+			
+				
 			break;
 		case R.id.btn_type2:
 			//类型2
 			btnType2.setBackgroundResource(R.drawable.heath_box_pass);
 			btnType.setBackgroundResource(R.drawable.heath_box);
-			listType3.clear();
-			listType3.addAll(listType);
-			gridTypeView.setAdapter(adaptertypeAdapter=new ChoseGridViewAdapter(listType3, DesGoodsActivity.this));
+			if (listType.size()==0) {
+				
+				rela_type1.setVisibility(View.GONE);
+			}
+			else
+			{
+				rela_type1.setVisibility(View.VISIBLE);
+			}
+				listType3.clear();
+				listType3.addAll(listType);
+				gridTypeView.setAdapter(adaptertypeAdapter=new ChoseGridViewAdapter(listType3, DesGoodsActivity.this));
+				
+			
 			
 			break;
 		case R.id.btn_finsh:

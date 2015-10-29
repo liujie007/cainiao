@@ -1,13 +1,8 @@
 package com.hncainiao.fubao.ui.fragment;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.net.Network;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -24,7 +19,6 @@ import com.hncainiao.fubao.ui.fragment.mallorder.TabAllFragment;
 import com.hncainiao.fubao.ui.fragment.mallorder.TabFinshFragment;
 import com.hncainiao.fubao.ui.fragment.mallorder.TabOutpayFragment;
 import com.hncainiao.fubao.ui.fragment.mallorder.TabPayFragment;
-import com.hncainiao.fubao.utils.NetworkUtil;
 
 /**
  * 	项目：FuBaoHealth

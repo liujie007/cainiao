@@ -14,6 +14,7 @@
          android:background="@drawable/asw_editet">
          
          <EditText 
+             android:id="@+id/ed_content"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:hint="填写你的反馈意见"
@@ -23,7 +24,7 @@
              android:background="@null"/>
      </LinearLayout>
      <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_post"
         style="@style/button"
         android:layout_width="match_parent"
         android:layout_height="50dp"

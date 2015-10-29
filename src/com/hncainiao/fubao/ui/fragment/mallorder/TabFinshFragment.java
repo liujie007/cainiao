@@ -87,6 +87,7 @@ public class TabFinshFragment extends com.hncainiao.fubao.ui.fragment.BaseFragme
 			try {
 				JSONObject jsonObject =new JSONObject(content);
 				if (jsonObject.getInt("err")==0) {
+					
 					 try {
 						 listDate=JsonUtil.parserJsonToList(TabAllBean.class, jsonObject.getJSONArray("order"));
 					} catch (Exception e) {
@@ -98,6 +99,9 @@ public class TabFinshFragment extends com.hncainiao.fubao.ui.fragment.BaseFragme
 						public void convert(ViewHolder helper, TabAllBean item,int pos) {
 							// TODO Auto-generated method stub
 							List<GoodsBean> goodslistBeans = null;
+							if (item.getOrder_detail().equals("")||item.getOrder_detail().equals("[]")) {
+							}
+							else {
 							try {
 								goodslistBeans = JsonUtil.parserJsonToList(GoodsBean.class, item.getOrder_detail());
 							} catch (Exception e) {
@@ -120,7 +124,7 @@ public class TabFinshFragment extends com.hncainiao.fubao.ui.fragment.BaseFragme
 							
 						}
 
-					
+					}
 						});
 				}
 				else {

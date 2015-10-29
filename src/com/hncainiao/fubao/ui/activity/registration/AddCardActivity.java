@@ -70,7 +70,7 @@ public class AddCardActivity extends BaseActivity {
 		ImageView Cannel;
 		RadioGroup group;
 		Spinner spBank;
-		String Type="";//1储蓄卡，2信用卡
+		String Type="1";//1储蓄卡，2信用卡
 	 
 	 
 	@Override
@@ -230,7 +230,7 @@ public class AddCardActivity extends BaseActivity {
 		
 		case R.id.cardTyoe://卡类型选择
 			
-			SelectType();
+			//SelectType();
 			break;
 		case R.id.timechoose:
 			

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/lin_layout_top_v"
+    android:layout_height="match_parent"
     android:background="@color/white" >
 
     <include layout="@layout/layout_common_title" />
 
     <TextView
         style="@style/heath_wrap"
-        android:padding="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
         android:text="选择筛选类型" />
 
     <View style="@style/heath_lin" />
@@ -53,7 +56,9 @@
 
             <TextView
                 style="@style/heath_wrap"
-                android:padding="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
                 android:text="价格" />
 
             <View style="@style/heath_lin" />
@@ -65,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 custom:tickCount="7" />
 
             <LinearLayout
@@ -86,8 +91,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -107,8 +112,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -128,8 +133,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -149,8 +154,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -170,8 +175,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -191,8 +196,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -212,8 +217,8 @@
                         android:layout_width="1dp"
                         android:layout_height="wrap_content"
                         android:background="@color/gray"
-                        android:visibility="gone"
-                        android:textSize="@dimen/text_size_narge" />
+                        android:textSize="@dimen/text_size_narge"
+                        android:visibility="gone" />
 
                     <TextView
                         style="@style/heath_wrap"
@@ -229,24 +234,38 @@
                 android:background="@color/gray" />
 
             <RelativeLayout
+                android:id="@+id/rela_type"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
 
                 <TextView
                     style="@style/heath_wrap"
                     android:layout_alignParentLeft="true"
-                    android:padding="10dp"
+                    android:layout_centerVertical="true"
                     android:text="品牌" />
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="全部" />
 
                 <CheckBox
                     android:id="@+id/ch_pp"
                     style="@style/heath_wrap"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="10dp"
-                    android:text="全部" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_all"
+                    android:background="@drawable/checkbox"
+                    android:button="@null" />
             </RelativeLayout>
 
-            <View style="@style/heath_lin" />
+           <!--  <View style="@style/heath_lin" /> -->
 
             <com.hncainiao.fubao.ui.views.MyGridView
                 android:id="@+id/grid_pp"
@@ -264,21 +283,34 @@
                 android:background="@color/gray" />
 
             <RelativeLayout
+                android:id="@+id/rela_type1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp" >
 
                 <TextView
                     style="@style/heath_wrap"
                     android:layout_alignParentLeft="true"
-                    android:padding="10dp"
+                    android:layout_centerVertical="true"
                     android:text="类别" />
 
-                <CheckBox
-                     android:id="@+id/ch_lb"
-                    style="@style/heath_wrap"
+                <TextView
+                    android:id="@+id/tv_all_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
                     android:text="全部" />
+
+                <CheckBox
+                    android:id="@+id/ch_lb"
+                    style="@style/heath_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_all_1"
+                    android:background="@drawable/checkbox"
+                    android:button="@null" />
             </RelativeLayout>
 
             <com.hncainiao.fubao.ui.views.MyGridView

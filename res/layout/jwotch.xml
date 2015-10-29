@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content" >
                 <Button 
                  android:layout_margin="10dp"
-                android:id="@+id/img_xueya"
+              
                 android:background="@drawable/selecror_xinlv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

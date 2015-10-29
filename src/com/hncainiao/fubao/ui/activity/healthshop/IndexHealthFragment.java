@@ -338,13 +338,13 @@ public class IndexHealthFragment extends BaseFragment implements OnClickListener
 						pagenum++;
 						healList.addAll(JsonUtil.parserJsonToList(HealthBean.class, jObject.getJSONArray("product")));
 						showLog("长度"+healList.size()+"数据："+healList.get(0).getName());
-						/*listShop.setAdapter(cAdapter=new CommonAdapter<HealthBean>(getApplicationContext(),healList,R.layout.index_heath_list) {
+						listShop.setAdapter(cAdapter=new CommonAdapter<HealthBean>(mContext.getApplicationContext(),healList,R.layout.index_heath_list) {
 							@Override
-							public void convert(ViewHolder helper, HealthBean item) {
+							public void convert(ViewHolder helper, HealthBean item ,int position) {
 								// TODO Auto-generated method stub
 								showLog("数据"+item.getName());
 							   helper.setText(R.id.tv_heath_shop_title, item.getName());
-							   helper.setText(R.id.tv_heath_shop_hospital, "所属医院："+item.getHospital_name());
+							   helper.setText(R.id.tv_heath_shop_hospital, "所属厂家："+item.getProducer());
 							   helper.setText(R.id.tv_heath_shop_people, "适宜人群"+item.getCrowd());
 							   helper.setText(R.id.tv_heath_shop_moeny, item.getPrice()+"￥");
 							   helper.setDelText(R.id.tv_heath_shop_start_money, item.getSuggested_price()+"￥");
@@ -352,7 +352,7 @@ public class IndexHealthFragment extends BaseFragment implements OnClickListener
 							
 							}
 						
-						});*/
+						});
 					
 					} catch (Exception e) {
 						// TODO Auto-generated catch block

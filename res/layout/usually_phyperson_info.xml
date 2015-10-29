@@ -77,7 +77,7 @@
      </LinearLayout>
 
       <View 
-         android:id="@+id/view1"
+         
          android:background="#bdbbc3"
          android:layout_margin="10dp"
          android:layout_width="match_parent"
@@ -108,7 +108,7 @@
   
      </LinearLayout>
       <View 
-         android:id="@+id/view1"
+         
          android:background="#bdbbc3"
          android:layout_margin="10dp"
          android:layout_width="match_parent"
@@ -137,7 +137,7 @@
              android:text=""/>
      </LinearLayout>
       <View 
-         android:id="@+id/view1"
+         
          android:background="#bdbbc3"
          android:layout_margin="10dp"
          android:layout_width="match_parent"

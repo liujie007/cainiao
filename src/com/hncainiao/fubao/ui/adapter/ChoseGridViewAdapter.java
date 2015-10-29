@@ -67,11 +67,11 @@ public class ChoseGridViewAdapter extends BaseAdapter {
 	
 		if (lIntegers.get(arg0)) {
 			viewCeChe.tvname.setBackgroundColor(mContext.getResources().getColor(R.color.blue));
-			
+			viewCeChe.tvname.setTextColor(mContext.getResources().getColor(R.color.white));
 		}
 		else {
 			viewCeChe.tvname.setBackgroundResource(R.drawable.heath_sai_box);
-			
+			viewCeChe.tvname.setTextColor(mContext.getResources().getColor(R.color.black));
 		}
 		viewCeChe.tvname.setText(typeBean.getName());
 		return arg1;

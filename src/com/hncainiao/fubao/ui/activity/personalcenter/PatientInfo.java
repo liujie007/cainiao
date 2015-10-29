@@ -128,8 +128,6 @@ public class PatientInfo extends BaseActivity {
 					Dissloading();
 					String front10="";
 					String lastfour="";
-					
-					System.out.println("就诊人信息--------------------"+new String(responseBody));
 					if(!CheckJson(responseBody).equals("")){
 						try {
 							JSONObject object=new JSONObject(new String(responseBody));
@@ -146,17 +144,10 @@ public class PatientInfo extends BaseActivity {
 									phone.setText(array.getJSONObject(i).getString("phone"));
 									
 									front10=array.getJSONObject(i).getString("idnumber")
-											.substring(0, 10);	
-									System.out.println("前10为"+front10);
-									
-									
+											.substring(0, 3);	
 									lastfour=array.getJSONObject(i).getString("idnumber")
-											.substring(14, 18);
-									
-									
-									System.out.println("后4wei"+lastfour);
-
-									idcard.setText(""+front10+"****"+lastfour);
+											.substring(15, 18);
+									idcard.setText(""+front10+"************"+lastfour);
 					
 									ka_num.setText(array.getJSONObject(i).getString("cardno"));	
 									String relate1=array.getJSONObject(i).getString("relate");

@@ -1,5 +1,6 @@
 package com.hncainiao.fubao.ui.views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -41,7 +42,7 @@ public class TitleBarView extends RelativeLayout {
 		setupView();
 	}
 
-	private void setupView() {
+	@SuppressLint("WrongViewCast") private void setupView() {
 		LayoutInflater.from(mContext).inflate(R.layout.layout_common_title, null);
 		btnLeft = (Button) findViewById(R.id.title_btn_left);
 //		btnRight = (Button) findViewById(R.id.title_btn_right);

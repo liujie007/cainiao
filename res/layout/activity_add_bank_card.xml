@@ -145,6 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:hint="请选择"
+                    android:text="储蓄卡"
                     android:textColor="#424344"
                     android:textSize="@dimen/text_size_large" />
 
